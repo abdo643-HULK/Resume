@@ -1,0 +1,290 @@
+:root {
+	--root-font-size: 12px;
+	--font-hero-legend: 'Heroes Legend';
+	--font-hero-legend-hollow: 'Heroes Legend Hollow';
+}
+
+html {
+	word-spacing: 0.25em;
+	font-size: var(--root-font-size);
+	font-family: var(--font-hero-legend);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+	color-adjust: exact !important;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+a {
+	&[href^='mailto']::before {
+		content: '📧 ';
+	}
+
+	&[href^='tel']::before {
+		content: '📞 ';
+	}
+}
+
+main {
+	background: center no-repeat url('/hulk39.jpg');
+	// background-size: 210mm 291mm;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+h1 {
+	margin: 0.4em;
+	font-size: 1.35rem;
+}
+
+h2 {
+	padding: 0.5em 0;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.1rem;
+	width: 100%;
+}
+
+.resume {
+	overflow: hidden;
+	border-radius: 3em;
+	backdrop-filter: blur(8px);
+	background-color: rgba(255, 255, 255, 0.5);
+	display: grid;
+	margin-bottom: 0.5cm;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 3fr;
+	grid-template-areas:
+		'profile education'
+		'about education'
+		'work education'
+		'community skills';
+}
+
+.grid-area {
+	position: relative;
+}
+
+.wrapper {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.grid-area {
+	z-index: 0;
+	&:not(:last-child) {
+		padding: 0.2em 0.7em;
+	}
+	// border: 1px black solid;
+}
+
+#profile {
+	grid-area: profile;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#about {
+	grid-area: about;
+}
+
+#work {
+	grid-area: work;
+}
+
+#skills {
+	grid-area: skills;
+	position: relative;
+
+	> div {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+#education {
+	grid-area: education;
+}
+
+#education,
+#work {
+	&-type {
+		padding-left: 0.5 em;
+		width: 80%;
+	}
+
+	&-info {
+		font-size: 0.8em;
+	}
+
+	table {
+		border-spacing: 1.5em 0.5em;
+	}
+
+	td {
+		vertical-align: baseline;
+	}
+}
+
+#community {
+	grid-area: community;
+}
+
+#profile,
+#skills {
+	backdrop-filter: blur(1px);
+}
+
+.circle {
+	background-color: white;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.photo {
+	width: 12em;
+	display: flex;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+#stackoverflow,
+#github-icon,
+#linkedin {
+	transform: translateY(0.7em);
+	margin: 0 0.4em;
+	width: 3em;
+}
+
+#holy-trinity {
+	line-height: 1.6;
+}
+
+#rust,
+#svelte {
+	line-height: 1;
+
+	span {
+		transform: translateY(-0.19em);
+		font-size: 3em;
+	}
+
+	&::after {
+		content: '\1F60D';
+		transform: translateY(-0.19em);
+		font-size: 3em;
+	}
+}
+
+.tag {
+	$border: 0.45em;
+	--tag-border: #{$border};
+	--tag-border-radius: 1.8em;
+	--tag-before-margin: calc(var(--tag-border, 0.3em) * -1);
+
+	position: relative;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	padding: 0.6em;
+	// margin: 0.2em;
+	margin: auto;
+
+	background-clip: padding-box;
+	background-color: var(--leftside-bg-color, whitesmoke);
+	// border-radius: var(--tag-border-radius);
+	border-radius: 1.8em;
+	color: var(--tag-color, black);
+	border: var(--tag-border) solid transparent;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		border-radius: inherit;
+		margin: var(--tag-before-margin);
+		background: var(--tag-border-color, black);
+	}
+
+	img {
+		width: var(--tag-img-size, 3.5em);
+		height: var(--tag-img-size, 3.5em);
+		// border-radius: 35%;
+		// margin: 0 0.3em;
+		// background-color: white;
+		// padding: 0.1em;
+	}
+}
+
+.gradient-box {
+	display: flex;
+	align-items: center;
+	//width: 50vw;
+	width: 90%;
+	margin: auto;
+	max-width: 22em;
+
+	position: relative;
+	padding: 30% 2em;
+	box-sizing: border-box;
+
+	$border: 5px;
+	color: #fff;
+	background: #000;
+	background-clip: padding-box; /* !importanté */
+	border: solid $border transparent; /* !importanté */
+	border-radius: 1em;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -$border; /* !importanté */
+		border-radius: inherit; /* !importanté */
+		background: linear-gradient(to right, red, orange);
+	}
+}

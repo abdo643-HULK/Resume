@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./scss/fonts.scss" />
+		<link rel="stylesheet" href="./scss/index.scss" />
+		<link rel="stylesheet" href="./scss/screen.scss" media="screen" />
+		<link rel="stylesheet" href="./scss/pdf.scss" media="print" />
+
+		<title>Abd El Rahaman Shehata's Resume</title>
+	</head>
+	<body>
+		<main class="wrapper">
+			<article
+				class="resume"
+				itemscope
+				itemtype="https://schema.org/Person"
+			>
+				<section id="profile" class="grid-area">
+					<h1>Abd El Rahaman Shehata</h1>
+					<div class="photo circle">
+						<img
+							src="https://avatars.githubusercontent.com/u/43996526?s=400&u=83a815106b7121dd2d4d9d956b4a875dce82c04e&v=4"
+							alt="Me with short hair"
+						/>
+					</div>
+				</section>
+				<section id="about" class="grid-area">
+					<h2>Personal Info</h2>
+					<address>
+						<div
+							itemscope
+							itemprop="address"
+							itemtype="https://schema.org/PostalAddress"
+						>
+							<span itemprop="streetAddress" class="street">
+								Am Schoepfwerk 29/10/54
+							</span>
+							<span itemprop="postalCode" class="postcode"
+								>1120</span
+							>
+							<span itemprop="addressLocality" class="city">
+								Vienna
+							</span>
+							<span itemprop="addressCountry" class="country">
+								Austria
+							</span>
+						</div>
+						<div>
+							Mail me on
+							<a
+								itemprop="email"
+								href="mailto:abou.shehata643@yahoo.de"
+							>
+								abou.shehata643@yahoo.de
+							</a>
+						</div>
+						<div>
+							Call me
+							<a itemprop="telephone" href="tel:+436764710996">
+								(+43) 676 4710996
+							</a>
+						</div>
+						<div>
+							Explore my
+							<a
+								itemprop="url"
+								href="https://github.com/abdo643-HULK"
+							>
+								<img
+									id="github-icon"
+									src="/svg/github-icon.svg"
+									alt="StackOverflow Logo.  Go to my profile"
+								/>
+								Github
+							</a>
+							Profile
+						</div>
+						<div>
+							See my unimpressive
+							<a
+								itemprop="url"
+								href="https://stackoverflow.com/users/13565745/abdo643"
+							>
+								<img
+									id="stackoverflow"
+									src="/svg/stackoverflow.svg"
+									alt="StackOverflow Logo. Go to my profile"
+								/>
+								Stackoverflow
+							</a>
+							Account
+						</div>
+						<div>
+							Lastly my
+							<a
+								itemprop="url"
+								href="https://www.linkedin.com/in/abdelrahaman-shehata-40344a189/"
+							>
+								<img
+									id="linkedin"
+									src="/svg/linkedin.svg"
+									alt="LinkedIn Logo.  Go to my profile"
+								/>
+								LinkedIn
+							</a>
+							Profile
+						</div>
+					</address>
+				</section>
+				<section id="skills" class="grid-area">
+					<h2>Soft Skills</h2>
+					<div>
+						<label for="progress-bar">
+							Uploading Document
+							<progress max="100" value="80"></progress>
+						</label>
+					</div>
+					<h2>Hard Skills</h2>
+					<div>
+						<h3>Languages:</h3>
+						<div
+							id="holy-trinity"
+							#563d7c
+							style="
+								--tag-border-color: linear-gradient(
+									#e34c26,
+									#1b73ba,
+									#f1e05a
+								);
+							"
+							class="tag"
+						>
+							<div>Holy Trinity</div>
+							<div>
+								<img
+									src="/svg/languages/HTML5.svg"
+									alt="HTML5 Logo"
+								/>
+
+								<img
+									src="/svg/languages/CSS3.svg"
+									alt="CSS3 Logo"
+								/>
+								<img
+									src="/svg/runtimes/Web-JS.svg"
+									alt="JS Logo"
+								/>
+							</div>
+						</div>
+						<span
+							id="rust"
+							style="--tag-border-color: #dea584"
+							class="tag"
+						>
+							<img
+								src="/svg/languages/Rust.svg"
+								alt="Rust Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #3178c6" class="tag">
+							<img
+								src="/svg/languages/TS.svg"
+								alt="Typescript Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #a97bff" class="tag">
+							<img
+								src="/svg/languages/Kotlin.svg"
+								alt="Kotlin Logo"
+							/> </span
+						><span style="--tag-border-color: #f05138" class="tag">
+							<img
+								src="/svg/languages/Swift.svg"
+								alt="Swift Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #e10098" class="tag">
+							<img
+								src="/svg/languages/Graphql.svg"
+								alt="Graphql Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #178600" class="tag">
+							<img
+								src="/svg/languages/C-Sharp.svg"
+								alt="C-Sharp Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #f34b7d" class="tag">
+							<img src="/svg/languages/C++.svg" alt="C++ Logo" />
+						</span>
+
+						<span style="--tag-border-color: #b07219" class="tag">
+							<img
+								src="/svg/languages/Java.svg"
+								alt="Java Logo"
+							/>
+						</span>
+					</div>
+					<div>
+						<h3>Frameworks:</h3>
+						<span
+							id="svelte"
+							style="--tag-border-color: #ff3c00"
+							class="tag"
+						>
+							<img
+								src="/svg/frameworks/svelte.svg"
+								alt="Svelte Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #00d8ff" class="tag">
+							<img
+								src="/svg/frameworks/react.svg"
+								alt="React Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #00d8ff" class="tag">
+							<img
+								src="/svg/frameworks/express.svg"
+								alt="Express Logo"
+							/>
+						</span>
+						<span style="--tag-border-color: #00d8ff" class="tag">
+							<img src="/svg/frameworks/koa.svg" alt="Koa Logo" />
+						</span>
+					</div>
+				</section>
+				<section id="work" class="grid-area">
+					<h2>Work</h2>
+					<table>
+						<thead class="visually-hidden">
+							<tr>
+								<th>Timespan of the Education</th>
+								<th>Type of Education and more</th>
+							</tr>
+						</thead>
+						<tr>
+							<td class="timeframe">09/2018 - 09/2020</td>
+							<td class="work-type">
+								Media Markt AT, SCS
+								<ul class="work-info">
+									<li>Saturday Job</li>
+									<li>
+										Worked as a "Technical Sales Advisor" in
+										the "Mobile Department" and in the last
+										two months also simultaneously in the
+										"Computer Department" because of my
+										salesmanship and knowledge
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section id="education" class="grid-area">
+					<h2>Education</h2>
+					<table>
+						<thead class="visually-hidden">
+							<tr>
+								<th>Timespan of the Education</th>
+								<th>Type of Education and more</th>
+							</tr>
+						</thead>
+						<tr>
+							<td class="timeframe">2010 - 2015</td>
+							<td class="education-type">GRG Erlgasse</td>
+						</tr>
+						<tr>
+							<td class="timeframe">2015 - 2020</td>
+							<td class="education-type">
+								HTL Moedling
+								<ul class="education-info">
+									<li>
+										Studied Electronics and Technical
+										Computer Sciences/Informatics
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="timeframe">2020 - Now</td>
+							<td class="education-type">
+								University of Applied Sciences Upper Austria,
+								Campus Hagenberg
+								<ul class="education-info">
+									<li>
+										Studying Mobile Computing (MC).
+										Currently in the 3rd Semester
+									</li>
+									<li>
+										Since this Semester 2 of my colleagues
+										and I are students' representatives for
+										3 departments:
+										<a
+											href="https://oeh.fh-ooe.at/campus/hagenberg"
+											>oeh.fh-ooe.at/campus/hagenberg</a
+										>
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section id="community" class="grid-area">
+					<hr />
+				</section>
+				<!-- <section class="grid-area references">
+					<hr />
+				</section> -->
+			</article>
+		</main>
+	</body>
+</html>
