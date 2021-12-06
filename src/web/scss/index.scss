@@ -1,13 +1,13 @@
 :root {
-	--root-font-size: 12px;
+	--root-font-size: 13px;
 	--font-hero-legend: 'Heroes Legend';
 	--font-hero-legend-hollow: 'Heroes Legend Hollow';
-}
-
-html {
-	word-spacing: 0.25em;
-	font-size: var(--root-font-size);
-	font-family: var(--font-hero-legend);
+	--font-badabb: 'BADABB';
+	--font-comix-loud: 'Comix Loud';
+	--font-tasm: 'The ASM';
+	--font-ama: 'AVENGEANCE MIGHTIEST AVENGER';
+	--font-cartoon-movie: 'Cartoon Movie';
+	--font-baby-monsta: 'Baby Monsta';
 }
 
 * {
@@ -17,6 +17,17 @@ html {
 	border: 0;
 	-webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
 	color-adjust: exact !important;
+}
+
+html {
+	word-spacing: 0.25em;
+	font-size: var(--root-font-size);
+	// font-family: var(--font-hero-legend);
+	font-family: var(--font-baby-monsta);
+}
+
+body {
+	font-size: 1.6rem;
 }
 
 img {
@@ -45,29 +56,29 @@ ul {
 }
 
 h1 {
-	margin: 0.4em;
-	font-size: 1.35rem;
+	margin: 0.4rem;
+	font-size: 2.5rem;
 }
 
 h2 {
-	padding: 0.5em 0;
-	font-size: 1.2rem;
+	padding: 0.2rem 0;
+	font-size: 2.3rem;
 	text-align: center;
 }
 
 h3 {
-	font-size: 1.1rem;
+	font-size: 2rem;
 	width: 100%;
 }
 
 .resume {
 	overflow: hidden;
-	border-radius: 3em;
+	border-radius: 3rem;
 	backdrop-filter: blur(8px);
 	background-color: rgba(255, 255, 255, 0.5);
 	display: grid;
-	margin-bottom: 0.5cm;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+	margin-bottom: 1em;
+	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
 
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 3fr;
@@ -93,7 +104,7 @@ h3 {
 .grid-area {
 	z-index: 0;
 	&:not(:last-child) {
-		padding: 0.2em 0.7em;
+		padding: 0.15em 0.3em;
 	}
 	// border: 1px black solid;
 }
@@ -123,8 +134,8 @@ h3 {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 1em;
-		margin-bottom: 1em;
+		gap: 0.3em;
+		margin-bottom: 0.3em;
 	}
 }
 
@@ -135,20 +146,28 @@ h3 {
 #education,
 #work {
 	&-type {
-		padding-left: 0.5 em;
-		width: 80%;
+		padding-left: 0.5rem;
 	}
 
 	&-info {
-		font-size: 0.8em;
+		font-size: 1rem;
+	}
+
+	.timeframe {
+		width: 25%;
+		margin-right: 0.4em;
 	}
 
 	table {
+		width: 100%;
 		border-spacing: 1.5em 0.5em;
+		table-layout: auto;
+		border-collapse: collapse;
 	}
 
 	td {
 		vertical-align: baseline;
+		// white-space: nowrap;
 	}
 }
 
@@ -168,7 +187,7 @@ h3 {
 }
 
 .photo {
-	width: 12em;
+	width: 12rem;
 	display: flex;
 }
 
@@ -185,13 +204,21 @@ h3 {
 #stackoverflow,
 #github-icon,
 #linkedin {
-	transform: translateY(0.7em);
-	margin: 0 0.4em;
-	width: 3em;
+	transform: translateY(0.4em);
+	margin: 0 0.4rem;
+	width: 1.7em;
 }
 
 #holy-trinity {
 	line-height: 1.6;
+
+	span {
+		font-size: 2rem;
+	}
+
+	> div {
+		width: 50%;
+	}
 }
 
 #rust,
@@ -199,22 +226,20 @@ h3 {
 	line-height: 1;
 
 	span {
-		transform: translateY(-0.19em);
 		font-size: 3em;
 	}
 
 	&::after {
 		content: '\1F60D';
-		transform: translateY(-0.19em);
-		font-size: 3em;
+		font-size: 3rem;
 	}
 }
 
 .tag {
-	$border: 0.45em;
+	$border: 0.3em;
 	--tag-border: #{$border};
-	--tag-border-radius: 1.8em;
-	--tag-before-margin: calc(var(--tag-border, 0.3em) * -1);
+	--tag-border-radius: 1.8rem;
+	--tag-before-margin: calc(var(--tag-border, 0.3rem) * -1);
 
 	position: relative;
 	display: flex;
@@ -222,14 +247,13 @@ h3 {
 	align-items: center;
 	flex-wrap: nowrap;
 
-	padding: 0.6em;
+	padding: 0.35em;
 	// margin: 0.2em;
 	margin: auto;
 
 	background-clip: padding-box;
 	background-color: var(--leftside-bg-color, whitesmoke);
-	// border-radius: var(--tag-border-radius);
-	border-radius: 1.8em;
+	border-radius: var(--tag-border-radius);
 	color: var(--tag-color, black);
 	border: var(--tag-border) solid transparent;
 
@@ -247,44 +271,11 @@ h3 {
 	}
 
 	img {
-		width: var(--tag-img-size, 3.5em);
-		height: var(--tag-img-size, 3.5em);
+		width: var(--tag-img-size, 3rem);
+		height: var(--tag-img-size, 3rem);
 		// border-radius: 35%;
 		// margin: 0 0.3em;
 		// background-color: white;
 		// padding: 0.1em;
-	}
-}
-
-.gradient-box {
-	display: flex;
-	align-items: center;
-	//width: 50vw;
-	width: 90%;
-	margin: auto;
-	max-width: 22em;
-
-	position: relative;
-	padding: 30% 2em;
-	box-sizing: border-box;
-
-	$border: 5px;
-	color: #fff;
-	background: #000;
-	background-clip: padding-box; /* !importanté */
-	border: solid $border transparent; /* !importanté */
-	border-radius: 1em;
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-		margin: -$border; /* !importanté */
-		border-radius: inherit; /* !importanté */
-		background: linear-gradient(to right, red, orange);
 	}
 }
