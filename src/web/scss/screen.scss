@@ -1,22 +1,44 @@
 .resume {
-	@media (min-width: 900px) {
-		grid-template-columns: 1fr 3fr;
+	margin: 0.5em 2em;
+	padding: 1em;
+	max-width: 45em;
+	display: block;
+
+	@media (min-width: 950px) {
+		display: grid;
+		padding: 0;
+		grid-template-columns: 15em 2fr;
 		grid-template-areas:
-			'profile about'
-			'about about'
-			'work work'
-			'education education'
-			'skills skills'
-			'community community'
-			'references references';
+			"profile info"
+			"skills about"
+			"skills about"
+			"skills work"
+			"skills education"
+			"skills education";
+	}
+}
+
+.grid-area {
+	margin-top: 0.6em;
+}
+
+@media (min-width: 950px) {
+	.more {
+		line-height: 1;
+		transform: translateY(-0.4em);
 	}
 
-	@media (min-width: 1200px) {
-		grid-template-columns: 17em 2fr;
-		grid-template-areas:
-			'profile education'
-			'about education'
-			'work education'
-			'community skills';
+	.tag {
+		padding: 0.3em;
+		margin: auto;
+	}
+
+	.grid-area {
+		margin: 0;
+	}
+
+	#profile,
+	#skills {
+		background-color: var(--leftside-bg-color);
 	}
 }

@@ -8,6 +8,7 @@
 	--font-ama: "AVENGEANCE MIGHTIEST AVENGER";
 	--font-cartoon-movie: "Cartoon Movie";
 	--font-baby-monsta: "Baby Monsta";
+	--leftside-bg-color: whitesmoke;
 }
 
 * {
@@ -27,7 +28,23 @@ html {
 }
 
 body {
-	font-size: 1.6rem;
+	font-size: 1.5rem;
+}
+
+h1 {
+	margin: 0.4rem 0.4rem 0 0.4rem;
+	font-size: 2.4rem;
+}
+
+h2 {
+	padding-top: 0.1em;
+	font-size: 2.3rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.8rem;
+	width: 100%;
 }
 
 img {
@@ -39,6 +56,9 @@ img {
 a {
 	position: relative;
 	text-decoration: none;
+}
+
+a:not(#skills a) {
 	font-style: inherit;
 
 	&:hover {
@@ -60,7 +80,7 @@ a {
 }
 
 main {
-	background: center no-repeat url("/hulk39.jpg");
+	background: center/cover no-repeat url("/hulk39.jpg");
 	// background-size: 210mm 291mm;
 }
 
@@ -68,68 +88,75 @@ ul {
 	list-style-position: inside;
 }
 
-h1 {
-	margin: 0.4rem;
-	font-size: 2.5rem;
-}
-
-h2 {
-	padding: 0.2rem 0;
-	font-size: 2.3rem;
-	text-align: center;
-}
-
-h3 {
-	font-size: 2rem;
+label {
 	width: 100%;
+	text-align: center;
+	position: relative;
 }
 
+meter,
 progress {
 	--border-radius: 2em;
 	--value: "100%";
+	// -webkit-appearance: none;
+	background: transparent;
 
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	// width: 100%;
-	width: 200px;
+	width: 100%;
 	position: relative;
+	border: none;
 
-	&::before {
-		content: "good"; //var(--value, "10")
-		// position: absolute;
-		// right: 0;
-		// top: -125%;
+	border-radius: var(--border-radius);
+}
+
+#soft-skills {
+	position: relative;
+	text-align: center;
+
+	div {
+		position: relative;
+	}
+
+	span {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		position: absolute;
 		z-index: 3;
-		display: inline;
-		background-color: navy;
-	}
+		width: 100%;
 
-	&::-webkit-progress-bar {
-		background-color: #fff;
-		border-radius: var(--border-radius);
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-	}
-
-	&::-moz-progress-bar {
-		background-color: #fff;
-		border-radius: var(--border-radius);
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-	}
-
-	&::-webkit-progress-value {
-		border-radius: var(--border-radius);
-		background-color: green;
-
-		&::before {
-			content: "good"; //var(--value, "10")
-			// position: absolute;
-			// right: 0;
-			// top: -125%;
-			display: inline;
-			z-index: 3;
-			background-color: navy;
+		&::after {
+			content: var(--skill-value) "%";
 		}
+	}
+}
+
+meter {
+	z-index: 1;
+	background: rgb(239, 239, 239);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+
+	&::-moz-meter-bar {
+		background: none;
+		background-color: green;
+		border-radius: var(--border-radius);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	}
+
+	&::-moz-meter-optimum,
+	&::-webkit-meter-bar {
+		background-color: green;
+	}
+
+	&::-webkit-meter-optimum-value {
+		background-color: green;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	}
+
+	&::-webkit-meter-inner-element {
+		-webkit-appearance: inherit;
+		box-sizing: inherit;
+		border-radius: var(--border-radius);
+		display: inline;
 	}
 }
 
@@ -138,21 +165,8 @@ progress {
 	border-radius: 3rem;
 	backdrop-filter: blur(8px);
 	background-color: rgba(255, 255, 255, 0.5);
-	display: grid;
 	margin-bottom: 1em;
 	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
-
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-columns: 1fr 3fr;
-	grid-template-areas:
-		"profile education"
-		"about education"
-		"work education"
-		"community skills";
-}
-
-.grid-area {
-	position: relative;
 }
 
 .wrapper {
@@ -164,11 +178,9 @@ progress {
 }
 
 .grid-area {
+	position: relative;
 	z-index: 0;
-	&:not(:last-child) {
-		padding: 0.15em 0.3em;
-	}
-	// border: 1px black solid;
+	padding: 0em 0.6em;
 }
 
 #profile {
@@ -177,6 +189,14 @@ progress {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#info {
+	grid-area: info;
+
+	div {
+		line-height: 1.3;
+	}
 }
 
 #about {
@@ -196,8 +216,8 @@ progress {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 0.3em;
-		margin-bottom: 0.3em;
+		gap: 0.2em;
+		margin-bottom: 0.2em;
 	}
 }
 
@@ -237,19 +257,35 @@ progress {
 	grid-area: community;
 }
 
-#profile,
-#skills {
-	backdrop-filter: blur(1px);
-}
-
 .circle {
 	background-color: white;
 	overflow: hidden;
 	border-radius: 50%;
 }
 
+#stackoverflow,
+#github-icon,
+#linkedin,
+#twitter {
+	transform: translateY(0.4em);
+	// margin: 0 0.4em;
+	width: 1.7em;
+}
+
+#holy-trinity {
+	line-height: 1;
+
+	span {
+		font-size: 2rem;
+	}
+
+	> div {
+		width: 50%;
+	}
+}
+
 .photo {
-	width: 12rem;
+	width: 7.1em;
 	display: flex;
 }
 
@@ -263,28 +299,7 @@ progress {
 	width: 1px;
 }
 
-#stackoverflow,
-#github-icon,
-#linkedin {
-	transform: translateY(0.4em);
-	// margin: 0 0.4em;
-	width: 1.7em;
-}
-
-#holy-trinity {
-	line-height: 1.6;
-
-	span {
-		font-size: 2rem;
-	}
-
-	> div {
-		width: 50%;
-	}
-}
-
-#rust,
-#svelte {
+.fascinated {
 	line-height: 1;
 
 	span {
@@ -309,9 +324,8 @@ progress {
 	align-items: center;
 	flex-wrap: nowrap;
 
-	padding: 0.35em;
-	// margin: 0.2em;
-	margin: auto;
+	padding: 0.3em 0.4em;
+	margin: 0.1em;
 
 	background-clip: padding-box;
 	background-color: var(--leftside-bg-color, whitesmoke);
@@ -340,4 +354,16 @@ progress {
 		// background-color: white;
 		// padding: 0.1em;
 	}
+}
+
+.more {
+	font-size: 1.6em;
+}
+
+.gray-stars {
+	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCBmb250LXNpemU9IjEwMCIgeT0iMC44ZW0iIG9wYWNpdHk9IjAuMyI+4piFPC90ZXh0Pjwvc3ZnPg==);
+}
+
+.star {
+	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCBmb250LXNpemU9IjEwMCIgeT0iMC44ZW0iIGZpbGw9ImdvbGQiPuKYhTwvdGV4dD48L3N2Zz4=);
 }
