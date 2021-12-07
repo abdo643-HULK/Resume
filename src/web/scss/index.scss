@@ -1,13 +1,13 @@
 :root {
 	--root-font-size: 13px;
-	--font-hero-legend: 'Heroes Legend';
-	--font-hero-legend-hollow: 'Heroes Legend Hollow';
-	--font-badabb: 'BADABB';
-	--font-comix-loud: 'Comix Loud';
-	--font-tasm: 'The ASM';
-	--font-ama: 'AVENGEANCE MIGHTIEST AVENGER';
-	--font-cartoon-movie: 'Cartoon Movie';
-	--font-baby-monsta: 'Baby Monsta';
+	--font-hero-legend: "Heroes Legend";
+	--font-hero-legend-hollow: "Heroes Legend Hollow";
+	--font-badabb: "BADABB";
+	--font-comix-loud: "Comix Loud";
+	--font-tasm: "The ASM";
+	--font-ama: "AVENGEANCE MIGHTIEST AVENGER";
+	--font-cartoon-movie: "Cartoon Movie";
+	--font-baby-monsta: "Baby Monsta";
 }
 
 * {
@@ -37,17 +37,30 @@ img {
 }
 
 a {
-	&[href^='mailto']::before {
-		content: '📧 ';
+	position: relative;
+	text-decoration: none;
+	font-style: inherit;
+
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
 	}
 
-	&[href^='tel']::before {
-		content: '📞 ';
+	&[href^="mailto"]::before {
+		content: url("/svg/envelope.svg");
+		width: 1.5em;
+		height: 1.5em;
+		transform: translateY(0.4em);
+		display: inline-block;
+	}
+
+	&[href^="tel"]::before {
+		content: "📞 ";
 	}
 }
 
 main {
-	background: center no-repeat url('/hulk39.jpg');
+	background: center no-repeat url("/hulk39.jpg");
 	// background-size: 210mm 291mm;
 }
 
@@ -71,6 +84,55 @@ h3 {
 	width: 100%;
 }
 
+progress {
+	--border-radius: 2em;
+	--value: "100%";
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	// width: 100%;
+	width: 200px;
+	position: relative;
+
+	&::before {
+		content: "good"; //var(--value, "10")
+		// position: absolute;
+		// right: 0;
+		// top: -125%;
+		z-index: 3;
+		display: inline;
+		background-color: navy;
+	}
+
+	&::-webkit-progress-bar {
+		background-color: #fff;
+		border-radius: var(--border-radius);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	}
+
+	&::-moz-progress-bar {
+		background-color: #fff;
+		border-radius: var(--border-radius);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	}
+
+	&::-webkit-progress-value {
+		border-radius: var(--border-radius);
+		background-color: green;
+
+		&::before {
+			content: "good"; //var(--value, "10")
+			// position: absolute;
+			// right: 0;
+			// top: -125%;
+			display: inline;
+			z-index: 3;
+			background-color: navy;
+		}
+	}
+}
+
 .resume {
 	overflow: hidden;
 	border-radius: 3rem;
@@ -80,13 +142,13 @@ h3 {
 	margin-bottom: 1em;
 	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
 
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: 1fr 3fr;
 	grid-template-areas:
-		'profile education'
-		'about education'
-		'work education'
-		'community skills';
+		"profile education"
+		"about education"
+		"work education"
+		"community skills";
 }
 
 .grid-area {
@@ -205,7 +267,7 @@ h3 {
 #github-icon,
 #linkedin {
 	transform: translateY(0.4em);
-	margin: 0 0.4rem;
+	// margin: 0 0.4em;
 	width: 1.7em;
 }
 
@@ -230,7 +292,7 @@ h3 {
 	}
 
 	&::after {
-		content: '\1F60D';
+		content: "\1F60D";
 		font-size: 3rem;
 	}
 }
@@ -258,7 +320,7 @@ h3 {
 	border: var(--tag-border) solid transparent;
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		right: 0;
