@@ -8,6 +8,9 @@
 	--font-ama: "AVENGEANCE MIGHTIEST AVENGER";
 	--font-cartoon-movie: "Cartoon Movie";
 	--font-baby-monsta: "Baby Monsta";
+	--font-fira-code: "Fira Code"
+	--font-comic-neue: "Comic Neue";
+	--font-comic-sans: "Comic Sans";
 	--leftside-bg-color: whitesmoke;
 }
 
@@ -24,11 +27,14 @@ html {
 	word-spacing: 0.25em;
 	font-size: var(--root-font-size);
 	// font-family: var(--font-hero-legend);
-	font-family: var(--font-baby-monsta);
+	// font-family: var(--font-baby-monsta);
+	font-family: var(--font-fira-code);
 }
 
 body {
 	font-size: 1.5rem;
+	// font-size: 1.47rem;
+	line-height: 1.1;
 }
 
 h1 {
@@ -38,12 +44,12 @@ h1 {
 
 h2 {
 	padding-top: 0.1em;
-	font-size: 2.3rem;
+	font-size: 2.2rem;
 	text-align: center;
 }
 
 h3 {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	width: 100%;
 }
 
@@ -85,7 +91,7 @@ main {
 }
 
 ul {
-	list-style-position: inside;
+	list-style-position: outside;
 }
 
 label {
@@ -123,6 +129,8 @@ progress {
 		position: absolute;
 		z-index: 3;
 		width: 100%;
+		font-weight: bold;
+		color: var(--leftside-bg-color);
 
 		&::after {
 			content: var(--skill-value) "%";
@@ -131,6 +139,8 @@ progress {
 }
 
 meter {
+	-webkit-appearance: none;
+	appearance: none;
 	z-index: 1;
 	background: rgb(239, 239, 239);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
@@ -142,14 +152,21 @@ meter {
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 	}
 
-	&::-moz-meter-optimum,
-	&::-webkit-meter-bar {
+	&::-moz-meter-optimum {
 		background-color: green;
+		border-radius: var(--border-radius) !important;
+	}
+
+	&::-webkit-meter-bar {
+		background: none;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+		border-radius: var(--border-radius) !important;
 	}
 
 	&::-webkit-meter-optimum-value {
+		background: none;
 		background-color: green;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+		border-radius: var(--border-radius);
 	}
 
 	&::-webkit-meter-inner-element {
@@ -163,8 +180,7 @@ meter {
 .resume {
 	overflow: hidden;
 	border-radius: 3rem;
-	backdrop-filter: blur(8px);
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.75);
 	margin-bottom: 1em;
 	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
 }
@@ -180,7 +196,7 @@ meter {
 .grid-area {
 	position: relative;
 	z-index: 0;
-	padding: 0em 0.6em;
+	padding: 0em 0.5em;
 }
 
 #profile {
@@ -195,7 +211,7 @@ meter {
 	grid-area: info;
 
 	div {
-		line-height: 1.3;
+		// line-height: 1.3;
 	}
 }
 
