@@ -1,39 +1,47 @@
 @font-face {
-	font-family: 'Heroes Legend';
-	src: url('/fonts/Heroes Legend.ttf') format('truetype');
+	font-family: "Heroes Legend";
+	src: url("/fonts/Heroes Legend.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Heroes Legend Hollow';
-	src: url('/fonts/Heroes Legend Hollow.ttf') format('truetype');
+	font-family: "Heroes Legend Hollow";
+	src: url("/fonts/Heroes Legend Hollow.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'BADABB';
-	src: url('/fonts/BADABB.ttf') format('truetype');
+	font-family: "BADABB";
+	src: url("/fonts/BADABB.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Comix Loud';
-	src: url('/fonts/Comix-Loud.ttf') format('truetype');
+	font-family: "Comix Loud";
+	src: url("/fonts/Comix-Loud.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'The ASM';
-	src: url('/fonts/tasm.ttf') format('truetype');
+	font-family: "The ASM";
+	src: url("/fonts/tasm.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'AVENGEANCE MIGHTIEST AVENGER';
-	src: url('/fonts/AVENGEANCE-MIGHTIEST-AVENGER.ttf') format('truetype');
+	font-family: "AVENGEANCE MIGHTIEST AVENGER";
+	src: url("/fonts/AVENGEANCE-MIGHTIEST-AVENGER.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Cartoon Movie';
-	src: url('/fonts/Cartoon-Movie.otf') format('opentype');
+	font-family: "Cartoon Movie";
+	src: url("/fonts/Cartoon-Movie.otf") format("opentype");
 }
 
 @font-face {
-	font-family: 'Baby Monsta';
-	src: url('/fonts/Baby-Monsta.otf') format('opentype');
+	font-family: "Baby Monsta";
+	src: url("/fonts/Baby-Monsta.otf") format("opentype");
 }
+
+@font-face {
+	font-family: "Comic Sans";
+	src: url("/fonts/Comic-Sans.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap");
