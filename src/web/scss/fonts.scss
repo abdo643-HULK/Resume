@@ -43,5 +43,22 @@
 	src: url("/fonts/Comic-Sans.ttf") format("truetype");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+@font-face {
+	font-family: "Arista Pro Bold";
+	src: url("/fonts/Arista-Pro-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Arista Pro Light";
+	src: url("/fonts/Arista-Pro-Light.ttf") format("truetype");
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: "Ethnocentric Rg";
+	src: url("/fonts/Ethnocentric-Rg.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap");

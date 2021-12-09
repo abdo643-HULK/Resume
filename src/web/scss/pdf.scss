@@ -4,6 +4,10 @@
 	size: A4 portrait;
 }
 
+body {
+	font-weight: 500;
+}
+
 main {
 	background: center no-repeat url("/hulk39.jpg");
 }
@@ -18,15 +22,13 @@ main {
 	background-color: rgba(255, 255, 255, 0.85);
 
 	display: grid;
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-rows: repeat(3, auto);
 	grid-template-columns: 21rem 2fr;
 	grid-template-areas:
 		"profile info"
 		"skills about"
-		"skills about"
-		"skills work"
 		"skills education"
-		"skills education";
+		"skills work";
 }
 
 a:not(#skills a):visited {
@@ -35,9 +37,15 @@ a:not(#skills a):visited {
 
 #profile,
 #skills {
-	// border-right: 2px solid #51b34f;
 	backdrop-filter: blur(1px);
 	background-color: var(--leftside-bg-color);
+}
+
+h3 {
+	font-family: var(--font-ethnocentric-rg);
+	font-size: 0.982rem;
+	margin: 0.2em 0;
+	width: 100%;
 }
 
 .grid-area {
