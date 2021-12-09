@@ -10,8 +10,6 @@
 	--font-cartoon-movie: "Cartoon Movie";
 	--font-baby-monsta: "Baby Monsta";
 	--font-fira-code: "Fira Code"
-	--font-comic-neue: "Comic Neue";
-	--font-comic-sans: "Comic Sans";
 	--font-arista-pro-bold: "Arista Pro Bold";
 	--font-arista-pro-light: "Arista Pro Light";
 	--font-ethnocentric-rg: "Ethnocentric Rg";
@@ -62,7 +60,7 @@ h2 {
 h3 {
 	font-family: var(--font-ethnocentric-rg);
 	// font-size: 1.7rem;
-	font-size: 1.025rem;
+	font-size: 1rem;
 	margin: 0.1em 0;
 	width: 100%;
 }
@@ -151,9 +149,12 @@ progress {
 		font-weight: bold;
 		color: var(--leftside-bg-color);
 		font-family: var(--font-ethnocentric-rg);
-
-		&::after {
-			content: var(--skill-value) "%";
+		
+		&::before {
+			font-weight: inherit;
+			line-height: 1.1;
+			// font-family: initial;
+			content: var(--skill-value) "%"; //"🔥";
 		}
 	}
 }
@@ -289,11 +290,6 @@ meter {
 	grid-area: community;
 }
 
-.circle {
-	background-color: white;
-	overflow: hidden;
-	border-radius: 50%;
-}
 
 #stackoverflow,
 #github-icon,
@@ -315,6 +311,12 @@ meter {
 	> div {
 		width: 50%;
 	}
+}
+
+.circle {
+	background-color: white;
+	overflow: hidden;
+	border-radius: 50%;
 }
 
 .photo {
