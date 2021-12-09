@@ -1,6 +1,6 @@
 @page {
-	padding: 0;
-	margin: 0;
+	padding: 0 !important;
+	margin: 0 !important;
 	size: A4 portrait;
 }
 
@@ -43,13 +43,17 @@ a:not(#skills a):visited {
 
 h3 {
 	font-family: var(--font-ethnocentric-rg);
-	font-size: 0.982rem;
+	font-size: 0.85em;
 	margin: 0.2em 0;
 	width: 100%;
 }
 
-.fascinated::after {
-	font-weight: initial;
+.fascinated {
+	line-height: 1;
+
+	&::after {
+		transform: translateY(0.12em);
+	}
 }
 
 .grid-area {

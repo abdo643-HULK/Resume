@@ -27,7 +27,6 @@
 }
 
 html {
-	word-spacing: 0.25em;
 	font-size: var(--root-font-size);
 	// font-family: var(--font-hero-legend);
 	// font-family: var(--font-baby-monsta);
@@ -60,9 +59,10 @@ h2 {
 h3 {
 	font-family: var(--font-ethnocentric-rg);
 	// font-size: 1.7rem;
-	font-size: 1rem;
+	font-size: 1.03rem;
 	margin: 0.1em 0;
 	width: 100%;
+	word-wrap: break-word;
 }
 
 address {
