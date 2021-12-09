@@ -42,6 +42,8 @@ body {
 	// font-size: 1.47rem;
 	line-height: 1.1;
 	font-weight: 600;
+	position: relative;
+	background: url("/images/hulk39.jpg") no-repeat center center fixed;
 }
 
 h1 {
@@ -101,8 +103,11 @@ a:not(#skills a) {
 	}
 }
 
-main {
-	background: center/cover no-repeat url("/hulk39.jpg");
+header {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+	color: rgb(7, 38, 139);
 }
 
 ul {
