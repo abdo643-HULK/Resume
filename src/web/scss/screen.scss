@@ -1,6 +1,6 @@
 .resume {
 	margin: 0.5em 2em;
-	padding: 1em;
+	padding: 0.5em;
 	max-width: 45em;
 	display: block;
 
@@ -22,10 +22,18 @@
 	margin-top: 0.6em;
 }
 
+.timeframe {
+	width: 35%;
+}
+
 @media (min-width: 950px) {
 	.more {
 		line-height: 1;
 		transform: translateY(-0.4em);
+	}
+
+	.timeframe {
+		width: 25%;
 	}
 
 	.tag {

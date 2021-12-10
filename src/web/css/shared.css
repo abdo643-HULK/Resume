@@ -191,8 +191,8 @@ meter::-webkit-meter-inner-element {
 .resume {
   overflow: hidden;
   border-radius: 3rem;
-  background-color: rgba(255, 255, 255, 0.75);
   margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.75);
   box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -269,7 +269,6 @@ meter::-webkit-meter-inner-element {
 #education td,
 #work td {
   vertical-align: baseline;
-  /* white-space: nowrap; */
 }
 
 #community {
