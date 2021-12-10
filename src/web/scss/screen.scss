@@ -1,10 +1,57 @@
+header {
+	color: rgb(7, 38, 139);
+	display: block;
+	text-align: center;
+	word-wrap: break-word;
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 1.4rem;
+	margin-bottom: 0.4em;
+	word-break: break-all;
+}
+
 .resume {
 	margin: 0.5em 2em;
 	padding: 0.5em;
 	max-width: 45em;
 	display: block;
+	text-align: center;
+}
 
-	@media (min-width: 950px) {
+.grid-area {
+	margin-top: 0.6em;
+}
+
+@media (max-width: 949px) {
+	tbody,
+	tr {
+		margin: 0.4em 0.15em;
+		display: flex;
+		flex-direction: column;
+	}
+
+	li {
+		text-align: left;
+		list-style-position: inside;
+	}
+
+	.education-type {
+		width: 100%;
+		text-align: center;
+	}
+
+	.timeframe {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media (min-width: 950px) {
+	.resume {
+		text-align: initial;
 		display: grid;
 		padding: 0;
 		grid-template-columns: 15em 2fr;
@@ -16,24 +63,14 @@
 			"skills education"
 			"skills work";
 	}
-}
 
-.grid-area {
-	margin-top: 0.6em;
-}
-
-.timeframe {
-	width: 35%;
-}
-
-@media (min-width: 950px) {
 	.more {
 		line-height: 1;
 		transform: translateY(-0.4em);
 	}
 
 	.timeframe {
-		width: 25%;
+		width: 20%;
 	}
 
 	.tag {

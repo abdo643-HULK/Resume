@@ -261,6 +261,11 @@ meter {
 	grid-area: education;
 }
 
+.timeframe {
+	width: 25%;
+	margin-right: 0.4em;
+}
+
 #education,
 #work {
 	&-type {
@@ -271,10 +276,6 @@ meter {
 		font-size: 1rem;
 	}
 
-	.timeframe {
-		width: 25%;
-		margin-right: 0.4em;
-	}
 
 	table {
 		width: 100%;
