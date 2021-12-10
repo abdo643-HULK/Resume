@@ -104,9 +104,10 @@ a:not(#skills a) {
 }
 
 header {
-	display: flex;
-	justify-content: center;
+	display: block;
+	text-align: center;
 	font-size: 3em;
+	word-wrap: break-word;
 	color: rgb(7, 38, 139);
 }
 

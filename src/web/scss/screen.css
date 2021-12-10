@@ -1,0 +1,41 @@
+.resume {
+  margin: 0.5em 2em;
+  padding: 1em;
+  max-width: 45em;
+  display: block;
+}
+@media (min-width: 950px) {
+  .resume {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 15em 2fr;
+    grid-template-areas: "profile info" "skills about" "skills about" "skills education" "skills education" "skills work";
+  }
+}
+
+.grid-area {
+  margin-top: 0.6em;
+}
+
+@media (min-width: 950px) {
+  .more {
+    line-height: 1;
+    transform: translateY(-0.4em);
+  }
+
+  .tag {
+    padding: 0.3em;
+    margin: auto;
+  }
+
+  .grid-area {
+    margin: 0;
+  }
+
+  #profile,
+#skills {
+    background-color: var(--leftside-bg-color);
+  }
+}
+
+/*# sourceMappingURL=screen.css.map */
