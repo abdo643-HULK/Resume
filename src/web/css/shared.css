@@ -246,6 +246,11 @@ meter::-webkit-meter-inner-element {
   grid-area: education;
 }
 
+.timeframe {
+  width: 25%;
+  margin-right: 0.4em;
+}
+
 #education-type,
 #work-type {
   padding-left: 0.5rem;
@@ -253,11 +258,6 @@ meter::-webkit-meter-inner-element {
 #education-info,
 #work-info {
   font-size: 1rem;
-}
-#education .timeframe,
-#work .timeframe {
-  width: 25%;
-  margin-right: 0.4em;
 }
 #education table,
 #work table {

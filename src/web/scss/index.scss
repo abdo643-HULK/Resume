@@ -1,8 +1,14 @@
-@import "./fonts.scss";
-@import "./shared.scss";
-@import "./screen.scss" screen;
-@import "./pdf.scss" print;
+@import "./fonts";
+@import "./shared";
 
-// @media screen {
-// 	@import "./screen.scss";
-// }
+// Doesn't Work because Sass doesn't keep the order
+// @import "./screen" screen;
+// @import "./pdf" print;
+
+@media screen {
+	@import "./screen";
+}
+
+@media print {
+	@import "./pdf";
+}
