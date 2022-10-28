@@ -1,0 +1,93 @@
+.screen-hidden {
+  display: none !important;
+}
+
+header {
+  color: rgb(7, 38, 139);
+  display: block;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 2.5em;
+}
+
+h3 {
+  margin-block-end: 0.4em;
+}
+
+summary h3 {
+  display: inline;
+}
+
+.resume {
+  margin: 0.5em 2em;
+  max-width: 60rem;
+  display: block;
+  text-align: center;
+  border-radius: 3rem;
+  overflow: hidden;
+  box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
+}
+.resume .page {
+  padding: 0.5em;
+}
+.resume .page section:last-child {
+  margin-block-end: 2.5rem;
+}
+
+.grid-area {
+  margin-top: 0.6em;
+}
+
+.project-item {
+  margin-block-end: 0.4em;
+}
+.project-item h3 {
+  margin-block-end: 0.1em;
+}
+
+@media (max-width: 949px) {
+  tbody,
+tr {
+    margin: 0.4em 0.15em;
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    text-align: left;
+    list-style-position: inside;
+  }
+  .education-type {
+    width: 100%;
+    text-align: center;
+  }
+  .timeframe {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  #holy-trinity div {
+    display: flex;
+    line-height: 1.1;
+    margin-inline-start: 0.3em;
+  }
+}
+@media (min-width: 950px) {
+  .resume .page {
+    text-align: initial;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 2fr 20rem;
+    grid-template-areas: "info profile" "education profile" "education skills" "work skills" "projects skills";
+  }
+  #profile,
+#skills {
+    background-color: var(--leftside-bg-color);
+  }
+  .tag {
+    padding: 0.3em;
+    margin: auto;
+  }
+  .grid-area {
+    margin: 0;
+  }
+}
