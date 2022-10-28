@@ -1,0 +1,62 @@
+:root {
+	--root-font-size: 13px;
+	/*FONTS*/
+	--font-hero-legend: 'Heroes Legend';
+	--font-hero-legend-hollow: 'Heroes Legend Hollow';
+	--font-badabb: 'BADABB';
+	--font-comix-loud: 'Comix Loud';
+	--font-tasm: 'The ASM';
+	--font-ama: 'AVENGEANCE MIGHTIEST AVENGER';
+	--font-cartoon-movie: 'Cartoon Movie';
+	--font-baby-monsta: 'Baby Monsta';
+	--font-fira-code: 'Fira Code';
+	--font-arista-pro-bold: 'Arista Pro Bold';
+	--font-arista-pro-light: 'Arista Pro Light';
+	--font-ethnocentric-rg: 'Ethnocentric Rg';
+
+	--h1-font-size: 1.9rem;
+	--h2-font-size: calc(var(--h1-font-size) - 0.4rem);
+	--h3-font-size: calc(var(--h2-font-size) - 0.2rem);
+	--h4-font-size: calc(var(--h3-font-size) - 0.3rem);
+
+	--leftside-bg-color: whitesmoke;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+	color-adjust: exact !important;
+}
+
+html {
+	font-size: var(--root-font-size);
+	/*
+				font-family: var(--font-hero-legend);
+				font-family: var(--font-baby-monsta);
+				*/
+	font-family: var(--font-fira-code);
+	font-display: block;
+}
+
+body {
+	font-size: 1.2rem;
+	/*font-size: 1.47rem;*/
+	line-height: 1.2;
+	font-weight: 600;
+	letter-spacing: 0.01px;
+	word-spacing: 0.01px;
+	position: relative;
+}
+
+.resume .page {
+	position: relative;
+	background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.75),
+			rgba(255, 255, 255, 0.75)
+		),
+		url('/images/hulk39.jpg') no-repeat center center fixed;
+}

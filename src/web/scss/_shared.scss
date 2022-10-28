@@ -1,70 +1,33 @@
-:root {
-	--root-font-size: 13px;
-	/*FONTS*/ 
-	--font-hero-legend: "Heroes Legend";
-	--font-hero-legend-hollow: "Heroes Legend Hollow";
-	--font-badabb: "BADABB";
-	--font-comix-loud: "Comix Loud";
-	--font-tasm: "The ASM";
-	--font-ama: "AVENGEANCE MIGHTIEST AVENGER";
-	--font-cartoon-movie: "Cartoon Movie";
-	--font-baby-monsta: "Baby Monsta";
-	--font-fira-code: "Fira Code"
-	--font-arista-pro-bold: "Arista Pro Bold";
-	--font-arista-pro-light: "Arista Pro Light";
-	--font-ethnocentric-rg: "Ethnocentric Rg";
-
-	--leftside-bg-color: whitesmoke;
-}
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	-webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
-	color-adjust: exact !important;
-}
-
-html {
-	font-size: var(--root-font-size);
-	/*
-	// font-family: var(--font-hero-legend);
-	// font-family: var(--font-baby-monsta);
-	*/ 
-	font-family: var(--font-fira-code);
-}
-
-
-body {
-	font-size: 1.5rem;
-	/*font-size: 1.47rem;*/
-	line-height: 1.1;
-	font-weight: 600;
-	position: relative;
-	background: url("/images/hulk39.jpg") no-repeat center center fixed;
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 h1 {
 	font-family: var(--font-ethnocentric-rg);
 	margin: 0.4rem 0.4rem 0 0.4rem;
-	font-size: 2.1rem;
+	font-size: var(--h1-font-size);
 }
 
 h2 {
 	font-family: var(--font-ethnocentric-rg);
 	padding: 0.1em 0;
-	font-size: 2rem;
+	font-size: var(--h2-font-size);
 	text-align: center;
 }
 
 h3 {
 	font-family: var(--font-ethnocentric-rg);
-	/* font-size: 1.7rem;*/
-	font-size: 1.03rem;
+	font-size: var(--h3-font-size);
 	margin: 0.1em 0;
 	width: 100%;
 	word-wrap: break-word;
+	word-break: break-word;
 }
 
 address {
@@ -80,6 +43,13 @@ img {
 a {
 	position: relative;
 	text-decoration: none;
+	&:not(#info a) {
+		display: inline-flex;
+	}
+}
+
+li:has(h3) {
+	list-style: none;
 }
 
 a:not(#skills a) {
@@ -90,16 +60,16 @@ a:not(#skills a) {
 		cursor: pointer;
 	}
 
-	&[href^="mailto"]::before {
-		content: url("/svg/envelope.svg");
+	&[href^='mailto']::before {
+		content: url('/svg/envelope.svg');
 		width: 1.5em;
 		height: 1.5em;
 		transform: translateY(0.4em);
 		display: inline-block;
 	}
 
-	&[href^="tel"]::before {
-		content: "📞 ";
+	&[href^='tel']::before {
+		content: '📞 ';
 	}
 }
 
@@ -111,10 +81,6 @@ header {
 	color: rgb(7, 38, 139);
 }
 
-ul {
-	list-style-position: outside;
-}
-
 label {
 	width: 100%;
 	text-align: center;
@@ -124,7 +90,7 @@ label {
 meter,
 progress {
 	--border-radius: 2em;
-	--value: "100%";
+	--value: '100%';
 	background: transparent;
 
 	width: 100%;
@@ -132,6 +98,18 @@ progress {
 	border: none;
 
 	border-radius: var(--border-radius);
+}
+
+summary {
+	cursor: pointer;
+
+	h3 {
+		display: inline;
+	}
+}
+
+time {
+	display: block;
 }
 
 #soft-skills {
@@ -152,12 +130,12 @@ progress {
 		font-weight: bold;
 		color: var(--leftside-bg-color);
 		font-family: var(--font-ethnocentric-rg);
-		
+
 		&::before {
 			font-weight: inherit;
 			line-height: 1.1;
 			/* font-family: initial;*/
-			content: var(--skill-value) "%"; //"🔥";
+			content: var(--skill-value) '%'; //"🔥";
 		}
 	}
 }
@@ -201,14 +179,6 @@ meter {
 	}
 }
 
-.resume {
-	overflow: hidden;
-	border-radius: 3rem;
-	margin-bottom: 1em;
-	background-color: rgba(255, 255, 255, 0.75);
-	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
-}
-
 .wrapper {
 	padding: 0;
 	display: flex;
@@ -247,23 +217,27 @@ meter {
 	grid-area: skills;
 	position: relative;
 
-	> div {
+	> #hard-skills ul {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 0.2em;
-		margin-bottom: 0.2em;
+		margin-block-end: 0.2em;
+		list-style: none;
 	}
 }
 
 #education {
 	grid-area: education;
+
+	& > ul {
+		list-style: none;
+	}
 }
 
-.timeframe {
-	width: 25%;
-	margin-right: 0.4em;
+#projects {
+	grid-area: projects;
 }
 
 #education,
@@ -275,7 +249,6 @@ meter {
 	&-info {
 		font-size: 1rem;
 	}
-
 
 	table {
 		width: 100%;
@@ -293,7 +266,6 @@ meter {
 	grid-area: community;
 }
 
-
 #stackoverflow,
 #github-icon,
 #linkedin,
@@ -305,15 +277,54 @@ meter {
 
 #holy-trinity {
 	line-height: 1;
-	
+
 	span {
 		font-family: var(--font-ethnocentric-rg);
 		font-size: 1.4rem;
 	}
 
+	.trinity-scripting-conatiner {
+		display: flex;
+		align-items: center;
+		gap: 0.15em;
+	}
+
+	a {
+		display: initial;
+	}
+
 	> div {
+		// display: flex;
 		width: 50%;
 	}
+}
+
+.list {
+	> li:not(:last-child) {
+		margin-block-end: 0.4em;
+	}
+}
+
+.education {
+	&-type {
+		padding-inline-start: 0.3em;
+	}
+}
+
+.education,
+.work {
+	&-type {
+		padding-left: 0.5rem;
+	}
+
+	&-info {
+		list-style-position: inside;
+		list-style-type: square;
+	}
+}
+
+.timeframe {
+	width: 20%;
 }
 
 .circle {
@@ -327,26 +338,15 @@ meter {
 	display: flex;
 }
 
-.visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
 .fascinated {
-	line-height: 1;
+	line-height: normal;
 
 	span {
 		font-size: 3em;
 	}
 
 	&::after {
-		content: "\1F60D";
-		font-weight: initial;
+		content: '\1F60D';
 		font-size: 3rem;
 	}
 }
@@ -373,7 +373,7 @@ meter {
 	border: var(--tag-border) solid transparent;
 
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -385,14 +385,20 @@ meter {
 		background: var(--tag-border-color, black);
 	}
 
-	img {
-		width: var(--tag-img-size, 3rem);
-		height: var(--tag-img-size, 3rem);
+	&:has(.fascinated) {
+		padding: 0 0.4rem;
 	}
-}
 
-.more {
-	font-size: 1.6em;
+	a {
+		display: flex;
+		align-items: center;
+	}
+
+	img {
+		--tag-img-size: 3rem;
+		width: var(--tag-img-size, 2.5rem);
+		height: var(--tag-img-size, 2.5rem);
+	}
 }
 
 .gray-stars {

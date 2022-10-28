@@ -1,0 +1,112 @@
+@page {
+	padding: 0 !important;
+	margin: 0 !important;
+	size: A4 portrait;
+}
+
+.print-hidden {
+	display: none !important;
+}
+
+body {
+	font-weight: 500;
+	font-size: 1.1rem;
+
+	:not(.wrapper, .resume, .resume *) {
+		display: none;
+	}
+}
+
+h3 {
+	font-family: var(--font-ethnocentric-rg);
+	font-size: 0.85em;
+	margin: 0.2em 0;
+}
+
+summary {
+	list-style: none;
+}
+
+// header {
+// 	display: none;
+// }
+
+.resume .page {
+	max-width: 207mm;
+	max-height: 297mm;
+	width: 207mm;
+	height: 295mm;
+	margin: 0.22rem 0;
+	border-radius: 2rem;
+
+	overflow: hidden;
+	background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0.85),
+			rgba(255, 255, 255, 0.85)
+		),
+		url('/images/hulk39.jpg') no-repeat center center fixed;
+	box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.35);
+
+	display: grid;
+	grid-template-columns: 2fr 18.5rem;
+	grid-template-areas:
+		'info profile'
+		// 'about skills'
+		'education profile'
+		'education skills'
+		'work skills'
+		'projects skills'
+		'projects skills';
+}
+
+// #info a[href^="https://"]
+// {
+// &::after {
+// 	content: ' (' attr(href) ')';
+// 	font-size: 90%;
+// }
+// }
+
+// #about-me {
+// 	display: none;
+// }
+
+// emulation works ok but actual print needs this translate
+// to actually center the emoji
+.fascinated::after {
+	transform: translateY(0.12em);
+}
+
+a:not(#skills a):visited {
+	color: blue;
+}
+
+#info {
+	div {
+		line-height: 0.8em;
+	}
+}
+
+#profile,
+#skills {
+	backdrop-filter: blur(1px);
+	background-color: var(--leftside-bg-color);
+}
+
+.grid-area {
+	padding: 0em 0.3em;
+}
+
+.grid-area:not(#skills) {
+	padding: 0em 0.4em;
+}
+
+.tag {
+	// padding: 0.2em;
+	margin: auto;
+}
+
+.more {
+	line-height: 0.1;
+}

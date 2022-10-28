@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<base href="{{BASE_URL}}" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- OpenGraph -->
 		<meta name="og:title" content="My Resume written with Saas and HTML" />
-		<meta name="og:url" content="https://www.shehata.rocks/" />
+		<meta name="og:url" content="{{BASE_URL}}" />
 		<meta
 			name="og:description"
 			content="Are you looking for an intern or dev ? Than have a look at my Resume"
@@ -17,8 +18,8 @@
 			content="https://avatars.githubusercontent.com/u/43996526?s=400&u=83a815106b7121dd2d4d9d956b4a875dce82c04e&v=4"
 		/>
 		<meta name="og:type" content="profile" />
-		<meta name="profile:first_name" content="profile" />
-		<meta name="profile:last_name" content="profile" />
+		<meta name="profile:first_name" content="Abd El Rahaman" />
+		<meta name="profile:last_name" content="Shehata" />
 		<meta name="profile:username" content="abdo1504" />
 		<meta name="profile:gender" content="male" />
 
@@ -38,610 +39,1167 @@
 
 		<title>Abd El Rahaman Shehata's Resume</title>
 
-		<link rel="stylesheet" href="/scss/index.scss" />
+		<!-- <style>
+			@import './scss/critical.scss';
+		</style> -->
+
+		<link rel="stylesheet" href="./scss/critical.scss" />
 		<!-- <link rel="stylesheet" href="/css/index.css" /> -->
+		<link rel="stylesheet" href="./scss/index.scss" />
 	</head>
 	<body>
 		<header>WARNING: SITE UNDER CONSTRUCTION</header>
-		<main class="wrapper">
-			<article class="resume" itemscope itemtype="https://schema.org/Person">
-				<section id="profile" class="grid-area">
-					<h1>Abd El Rahaman Shehata</h1>
-					<div class="photo circle">
-						<img
-							src="https://avatars.githubusercontent.com/u/43996526?s=400&u=83a815106b7121dd2d4d9d956b4a875dce82c04e&v=4"
-							alt="Me with short hair"
-						/>
-					</div>
-				</section>
-				<section id="skills" class="grid-area">
-					<section id="soft-skills">
-						<h2>Soft Skills</h2>
-						<div data-skill-value="110" style="--skill-value: '110'">
-							<label for="progress-bar"> Helping Others </label>
-							<div>
-								<meter min="0" max="100" value="110"></meter>
-								<span></span>
-							</div>
-						</div>
-						<div data-skill-value="100" style="--skill-value: '100'">
-							<label for="progress-bar"> Collaboration </label>
-							<div>
-								<meter min="0" max="100" value="100"></meter>
-								<span></span>
-							</div>
-						</div>
-						<div data-skill-value="90" style="--skill-value: '90'">
-							<label for="progress-bar"> Leadership </label>
-							<div>
-								<meter min="0" max="100" value="90"></meter>
-								<span></span>
-							</div>
-						</div>
-						<!-- <div data-skill-value="70" style="--skill-value: '70'">
-							<label for="progress-bar"> Twitter </label>
-							<div>
-								<meter min="0" max="100" value="70"></meter>
-								<span></span>
-							</div>
-						</div> -->
-					</section>
-					<h2>Hard Skills</h2>
-					<div>
-						<h3>Languages :</h3>
-						<div
-							id="holy-trinity"
-							#563d7c
-							style="
-								--tag-border-color: linear-gradient(
-									to right,
-									#e34c26,
-									#1b73ba,
-									#f1e05a
-								);
-							"
-							class="tag"
-						>
-							<span>Holy Trinity</span>
-							<div>
-								<a
-									rel="external"
-									hreflang="en"
-									href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-								>
-									<img
-										src="/svg/languages/HTML5.svg"
-										alt="The official Logo of HTML5 the markup language of the web. Most of the time nice to work with."
-									/>
-								</a>
-								<a
-									rel="external"
-									hreflang="en"
-									href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-								>
-									<img
-										src="/svg/languages/CSS3.svg"
-										alt="A Logo of CSS3 the styling language of the web. Sometimes hard but still a lot easier than native App design."
-									/>
-								</a>
-								<a
-									rel="external"
-									hreflang="en"
-									href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-								>
-									<img
-										src="/svg/runtimes/Web-JS.svg"
-										alt="A Logo of JavaScript the programming language of the web. Logo"
-									/>
-								</a>
-							</div>
-						</div>
-						<a
-							id="rust"
-							style="--tag-border-color: #dea584"
-							class="tag fascinated"
-							rel="external"
-							hreflang="en"
-							href="https://www.rust-lang.org/"
-						>
-							<img
-								src="/svg/languages/Rust.svg"
-								alt="The official Logo of the Rust programming language. The modern systems programming language and replacment for C++. A beatiful language."
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #3178c6"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://www.typescriptlang.org/"
-						>
-							<img
-								src="/svg/languages/TS.svg"
-								alt="The official Logo of the Typescript programming language. The language known as the supertset of JavaScript and typed JavaScript."
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #a97bff"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://kotlinlang.org/"
-						>
-							<img
-								src="/svg/languages/Kotlin.svg"
-								alt="The official Logo of the Kotlin programming language. The preffered Language for Android and compatible with Java Code / JVM but also supports native."
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #cd6799"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://sass-lang.com/"
-						>
-							<img
-								src="/svg/languages/Sass.svg"
-								alt="The official Logo of the Sass the preprocessed styling language. It is used to for non 'DRY' css. It's one of the languages that pushes CSS3 to be better"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #f05138"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://www.swift.org/"
-						>
-							<img
-								src="/svg/languages/Swift.svg"
-								alt="The official Logo of the Swift programming language. The modern replacment for Objective-C."
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #e10098"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://graphql.org/"
-						>
-							<img
-								src="/svg/languages/Graphql.svg"
-								alt="The official Logo of GraphQL the query language. Build by Meta to replace REST ENPOINTS"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #178600"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://docs.microsoft.com/en-us/dotnet/csharp/"
-						>
-							<img
-								src="/svg/languages/C-Sharp.svg"
-								alt="The official Logo of the C-Sharp programming language. Previously known as the Java copy, is today one of the best looking languages."
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #f34b7d"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://isocpp.org/"
-						>
-							<img
-								src="/svg/languages/C++.svg"
-								alt="The official Logo of the C++ programming language.
-								The Language is becoming easier to work with"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #bb92ac"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://mathworks.com/products/matlab.html"
-						>
-							<img
-								src="/svg/languages/Matlab.svg"
-								alt="The official Logo of Matlab programming language.
-								The Language is mostly used for Signal Processing and Math"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #b07219"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://www.java.com/en/"
-						>
-							<img
-								src="/svg/languages/Java.svg"
-								alt="The official Logo of the Java programming language.
-								The language itself is 'meh'"
-							/>
-						</a>
-					</div>
-					<div>
-						<h3>Frameworks/Tools/Tech :</h3>
-						<a
-							id="svelte"
-							style="--tag-border-color: #ff3c00"
-							class="tag fascinated"
-							rel="external"
-							hreflang="en"
-							href="https://svelte.dev/"
-						>
-							<img
-								src="/svg/frameworks/svelte.svg"
-								alt="Official Logo of the best frontend framework/compiler known as Svelte. It' not even a competition"
-							/>
-						</a>
-						<a
-							style="
-								--tag-border-color: linear-gradient(
-									135deg,
-									#3d3d3d,
-									#3d3d3d,
-									#5a0fc8,
-									#3d3d3d,
-									#3d3d3d
-								);
-							"
-							class="tag fascinated"
-							rel="external"
-							hreflang="en"
-							href="https://web.dev/progressive-web-apps/"
-						>
-							<img
-								src="/svg/tech/pwa.svg"
-								alt="The official Logo of Progressive Web Apps, a powerful web technologie"
-							/> </a
-						><a
-							style="--tag-border-color: #1da1f2"
-							class="tag"
-							rel="author"
-							hreflang="en"
-							href="https://twitter.com/shehata643"
-						>
-							<img
-								src="/svg/tech/twitter.svg"
-								alt="Logo of the social media platform Twitter."
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #f05133"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://git-scm.com/"
-						>
-							<img
-								src="/svg/tools/git.svg"
-								alt="Logo of the 'Version Control Software' Git"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #e95420"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://www.linuxfoundation.org/"
-						>
-							<img
-								src="/svg/tech/tux.svg"
-								alt="Tux the penguin, the official linux mascot"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #00d8ff"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://reactjs.org/"
-						>
-							<img
-								src="/svg/frameworks/react.svg"
-								alt="Logo of the frontend web framework React"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #fcca3f"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://firebase.google.com/"
-						>
-							<img
-								src="/svg/tech/firebase.svg"
-								alt="Logo of the NodeJS framework Express"
-							/>
-						</a>
+		<main class="wrapper" itemscope itemtype="https://schema.org/Person">
+			<article id="about-me">
+				<h2>About Me</h2>
+				<p>
+					Hi, I'm Abdo, I'm an enthusiastic and humorous guy with roots in Egypt
+					and born in Austria, who loves to program and help others. I'm a huge
+					open source enthusiast and really interested in computer graphics.
+					Currently, I'm working on 2 projects:
+				</p>
+				<ul>
+					<li>3D Computer Graphics with WebGPU (Bachelor Thesis)</li>
+					<li>
+						A OSS restaurant delivery platform build with "Svelte-Kit" and
+						"Fastify".
+					</li>
+				</ul>
+				<p>
+					The beginning of 2021 and the months after were a bit tough because my
+					father had just died, but my friends and family were here and gave me
+					strength and that's why I love helping and collaborating with other
+					because they give you the power to do anything. In my free time I like
+					watching Anime, TV-Shows, playing basketball, football, going out or
+					to the gym and reading books and comics.
+				</p>
+			</article>
 
-						<a
-							style="--tag-border-color: #000000"
-							class="tag"
-							rel="external"
-							href="https://koajs.com/"
-							hreflang="en"
-						>
+			<h2>Resume:</h2>
+			<article class="resume">
+				<div class="page">
+					<section id="profile" class="grid-area">
+						<h1 itemprop="name">
+							<span itemprop="givenName">Abd El Rahaman</span>
+							<span itemprop="familyName">Shehata</span>
+						</h1>
+						<div class="photo circle">
 							<img
-								src="/svg/frameworks/koa.svg"
-								alt="Logo of the NodeJS framework Koa"
+								src="https://avatars.githubusercontent.com/u/43996526?s=400&u=83a815106b7121dd2d4d9d956b4a875dce82c04e&v=4"
+								alt="Me with short hair"
 							/>
-						</a>
-						<a
-							style="--tag-border-color: #0078c6"
-							class="tag"
-							rel="external"
-							href="https://code.visualstudio.com/"
-							hreflang="en"
-						>
-							<img
-								src="/svg/tools/vscode.svg"
-								alt="Logo of the code editor 'Visual Studio Code'"
-							/>
-						</a>
-						<a
-							style="
-								--tag-border-color: linear-gradient(
-									#64a5ff,
-									#8877fe,
-									#af45fe
-								);
-							"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://vitejs.dev/"
-						>
-							<img
-								src="/svg/tools/vite.svg"
-								alt="Logo of the frontend tool Vite. This tool is known as a bundler"
-							/>
-						</a>
-						<a
-							style="
-								--tag-border-color: linear-gradient(
-									#3ddc85,
-									#173d4d,
-									#4285f4
-								);
-							"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://developer.android.com/jetpack/compose"
-						>
-							<img
-								src="/svg/frameworks/jetpack-compose.svg"
-								alt="Logo of the new Android Framework Jetpack Compose"
-							/>
-						</a>
-						<a
-							style="--tag-border-color: #c0c0c0"
-							class="tag"
-							rel="external"
-							hreflang="en"
-							href="https://expressjs.com/"
-						>
-							<img
-								src="/svg/frameworks/express.svg"
-								alt="Logo of the NodeJS framework Express"
-							/>
-						</a>
-					</div>
-					<div class="more">...</div>
-				</section>
-				<section id="info" class="grid-area">
-					<h2>Personal Info</h2>
-					<address>
-						<div
-							itemscope
-							itemprop="address"
-							itemtype="https://schema.org/PostalAddress"
-						>
-							<span itemprop="streetAddress" class="street">
-								Am Schoepfwerk 29/10/54 ,
-							</span>
-							<span itemprop="postalCode" class="postcode">1120</span>
-							<span itemprop="addressLocality" class="city">Vienna ,</span>
-							<span itemprop="addressCountry" class="country">
-								Austria
-							</span>
 						</div>
-						<div>
-							<!-- <svg version="2.0" width="2em" height="2em" style="fill: black">
-								<use href="#envelope" />
-							</svg> -->
-							Mail me at
-							<a itemprop="email" href="mailto:abou.shehata643@yahoo.de">
-								abou.shehata643@yahoo.de
-							</a>
-						</div>
-						<div>
-							Explore my
-							<a itemprop="url" href="https://github.com/abdo643-HULK">
-								<img
-									id="github-icon"
-									src="/svg/github-icon.svg"
-									alt="StackOverflow Logo.  Go to my profile"
-								/>
-								Github
-							</a>
-							Profile
-						</div>
-						<div>
-							See my <em>"very"</em> active
-							<a
-								itemprop="url"
-								href="https://stackoverflow.com/users/13565745/abdo643"
-							>
-								<img
-									id="stackoverflow"
-									src="/svg/stackoverflow.svg"
-									alt="StackOverflow Logo. Go to my profile"
-								/>
-								Stackoverflow
-							</a>
-							Account
-						</div>
-						<div>
-							My activity on
-							<a
-								itemprop="url"
-								rel="author"
-								hreflang="en"
-								href="https://twitter.com/shehata643"
-							>
-								<img
-									id="twitter"
-									src="/svg/tech/twitter.svg"
-									alt="Logo of the social media platform Twitter."
-								/>
-								Twitter
-							</a>
-						</div>
-						<div>
-							Lastly have some fun on
-							<a itemprop="url" href="https://www.instagram.com/abdo643/">
-								<img
-									id="linkedin"
-									src="/svg/instagram.svg"
-									alt="LinkedIn Logo.  Go to my profile"
-								/>
-								Instagram
-							</a>
-						</div>
-						<!-- <div>
-							Lastly my
-							<a
-								itemprop="url"
-								href="https://www.linkedin.com/in/abdelrahaman-shehata-40344a189/"
-							>
-								<img
-									id="linkedin"
-									src="/svg/linkedin.svg"
-									alt="LinkedIn Logo.  Go to my profile"
-								/>
-								LinkedIn
-							</a>
-							Profile
-						</div> -->
-					</address>
-				</section>
-				<section id="about" class="grid-area">
-					<h2>About</h2>
-					<p>
-						Hi, I'm Abdo, I'm an enthusiastic and humorful guy with roots in
-						Egypt and born in Austria, who loves to programm and help others.
-						I am a really big open source enthusiast. Currently I am working
-						on a Open Source delivery Platform build on top of "Svelte-Kit"
-						and the "Koa" Framework. The beginning of 2021 and the months
-						after were a bit tough because my father had died, but my friends
-						and family were here and gave me strength and that's why I love
-						helping and collaborating with other because they give you the
-						power to do anything. In my free time I like watching Anime,
-						TV-Shows, playing basketball, football, going out or to the gym
-						and reading books and comics.
-					</p>
-				</section>
-				<section id="education" class="grid-area">
-					<h2>Education</h2>
-					<table>
-						<thead class="visually-hidden">
-							<tr>
-								<th>Timespan of the Education</th>
-								<th>Type of Education and more</th>
-							</tr>
-						</thead>
-						<tr>
-							<td class="timeframe">2010 - 2015</td>
-							<td class="education-type"><h3>GRG Erlgasse</h3></td>
-						</tr>
-						<tr>
-							<td class="timeframe">2015 - 2020</td>
-							<td class="education-type">
-								<h3>HTL Moedling</h3>
-								<ul class="education-info">
-									<li>
-										Studied Electronics and Technical Computer
-										Sciences/Informatics
+					</section>
+					<section id="skills" class="grid-area">
+						<section id="soft-skills">
+							<h2>Soft Skills</h2>
+							<div data-skill-value="110" style="--skill-value: '110'">
+								<label for="progress-bar"> Helping Others </label>
+								<div>
+									<meter min="0" max="100" value="110"></meter>
+									<span class="value-display"></span>
+								</div>
+							</div>
+							<div data-skill-value="100" style="--skill-value: '100'">
+								<label for="progress-bar"> Collaboration </label>
+								<div>
+									<meter min="0" max="100" value="100"></meter>
+									<span class="value-display"></span>
+								</div>
+							</div>
+							<div data-skill-value="90" style="--skill-value: '90'">
+								<label for="progress-bar"> Leadership </label>
+								<div>
+									<meter min="0" max="100" value="90"></meter>
+									<span class="value-display"></span>
+								</div>
+							</div>
+							<!-- <div data-skill-value="70" style="--skill-value: '70'">
+								<label for="progress-bar"> Twitter </label>
+								<div>
+									<meter min="0" max="100" value="70"></meter>
+									<span></span>
+								</div>
+							</div> -->
+						</section>
+						<section id="hard-skills">
+							<h2>Technical Skills</h2>
+							<section>
+								<h3>Languages :</h3>
+								<ul>
+									<!-- Web Languages -->
+									<li
+										id="holy-trinity"
+										style="
+											--tag-border-color: linear-gradient(
+												to right,
+												#e34c26,
+												#1b73ba,
+												#f1e05a,
+												#3178c6
+											);
+										"
+										class="tag"
+									>
+										<span>Holy Trinity</span>
+										<div>
+											<a
+												rel="external"
+												hreflang="en"
+												href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+											>
+												<img
+													src="/svg/languages/HTML5.svg"
+													alt="The official Logo of HTML5 the markup language of the web. Most of the time nice to work with."
+												/>
+											</a>
+											<a
+												rel="external"
+												hreflang="en"
+												href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+											>
+												<img
+													src="/svg/languages/CSS3.svg"
+													alt="A Logo of CSS3 the styling language of the web. Sometimes hard but still a lot easier than native App design."
+												/>
+											</a>
+											<span
+												class="trinity-scripting-conatiner"
+												style="font-size: var(--h1-font-size)"
+											>
+												<a
+													rel="external"
+													hreflang="en"
+													href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+												>
+													<img
+														src="/svg/runtimes/Web-JS.svg"
+														alt="A Logo of JavaScript the programming language of the web. Logo"
+													/>
+												</a>
+												/
+												<a
+													rel="external"
+													hreflang="en"
+													href="https://www.typescriptlang.org/"
+												>
+													<img
+														src="/svg/languages/TS.svg"
+														alt="The official Logo of the Typescript programming language. The language known as the supertset of JavaScript and typed JavaScript."
+													/>
+												</a>
+											</span>
+										</div>
 									</li>
-								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td class="timeframe">2020 - Now</td>
-							<td class="education-type">
-								<h3>
-									University of Applied Sciences Upper Austria, Campus
-									Hagenberg
-								</h3>
-								<ul class="education-info">
-									<li>
-										Studying Mobile Computing (MC). Currently in the
-										3rd Semester
+									<!-- Rust -->
+									<li style="--tag-border-color: #dea584" class="tag">
+										<a
+											id="rust"
+											class="fascinated"
+											rel="external"
+											hreflang="en"
+											href="https://www.rust-lang.org/"
+										>
+											<img
+												src="/svg/languages/Rust.svg"
+												alt="The official Logo of the Rust programming language. The modern systems programming language and replacment for C++. A beatiful language."
+											/>
+										</a>
 									</li>
-									<li>
-										Since this Semester 2 of my colleagues and I are
-										students' representatives for 3 departments:
-										<a href="https://oeh.fh-ooe.at/campus/hagenberg">
-											oeh.fh-ooe.at/campus/hagenberg
+									<!-- Typescript -->
+									<!-- <li style="--tag-border-color: #3178c6" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.typescriptlang.org/"
+										>
+											<img
+												src="/svg/languages/TS.svg"
+												alt="The official Logo of the Typescript programming language. The language known as the supertset of JavaScript and typed JavaScript."
+											/>
+										</a>
+									</li> -->
+									<!-- Scss -->
+									<li style="--tag-border-color: #cd6799" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://sass-lang.com/"
+										>
+											<img
+												src="/svg/languages/Sass.svg"
+												alt="The official Logo of the Sass the preprocessed styling language. It is used to for non 'DRY' css. It's one of the languages that pushes CSS3 to be better"
+											/>
+										</a>
+									</li>
+									<!-- Swift -->
+									<li style="--tag-border-color: #f05138" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.swift.org/"
+										>
+											<img
+												src="/svg/languages/Swift.svg"
+												alt="The official Logo of the Swift programming language. The modern replacment for Objective-C."
+											/>
+										</a>
+									</li>
+
+									<!-- GraphQL -->
+									<li style="--tag-border-color: #e10098" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://graphql.org/"
+										>
+											<img
+												src="/svg/languages/Graphql.svg"
+												alt="The official Logo of GraphQL the query language. Build by Meta to replace REST ENPOINTS"
+											/>
+										</a>
+									</li>
+									<!-- Kotlin -->
+									<li style="--tag-border-color: #a97bff" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://kotlinlang.org/"
+											class="fascinated"
+										>
+											<img
+												src="/svg/languages/Kotlin.svg"
+												alt="The official Logo of the Kotlin programming language. The preffered Language for Android and compatible with Java Code / JVM but also supports native."
+											/>
+										</a>
+									</li>
+									<!-- C# -->
+									<li style="--tag-border-color: #178600" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+										>
+											<img
+												src="/svg/languages/C-Sharp.svg"
+												alt="The official Logo of the C-Sharp programming language. Previously known as the Java copy, is today one of the best looking languages."
+											/>
+										</a>
+									</li>
+
+									<!-- C++ -->
+									<li style="--tag-border-color: #f34b7d" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://isocpp.org/"
+										>
+											<img
+												src="/svg/languages/C++.svg"
+												alt="The official Logo of the C++ programming language.
+										The Language is becoming easier to work with"
+											/>
+										</a>
+									</li>
+									<!-- Matlab -->
+									<li style="--tag-border-color: #bb92ac" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://mathworks.com/products/matlab.html"
+										>
+											<img
+												src="/svg/languages/Matlab.svg"
+												alt="The official Logo of Matlab programming language.
+										The Language is mostly used for Signal Processing and Math"
+											/>
+										</a>
+									</li>
+									<!-- Java -->
+									<li style="--tag-border-color: #b07219" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.java.com/en/"
+										>
+											<img
+												src="/svg/languages/Java.svg"
+												alt="The official Logo of the Java programming language.
+										The language itself is 'meh'"
+											/>
 										</a>
 									</li>
 								</ul>
-							</td>
-						</tr>
-					</table>
-				</section>
-				<section id="work" class="grid-area">
-					<h2>Work</h2>
-					<table>
-						<thead class="visually-hidden">
-							<tr>
-								<th>Timespan of the Education</th>
-								<th>Type of Education and more</th>
-							</tr>
-						</thead>
-						<tr>
-							<td class="timeframe">09/2018 - 09/2020</td>
-							<td class="work-type">
-								<h3>Media Markt AT, SCS</h3>
-								<ul class="work-info">
-									<li>Saturday Job</li>
-									<li>
-										Worked as a "Technical Sales Advisor" in the
-										"Mobile Department" and simultaneously in the
-										"Computer Department" because of my salesmanship
-										and knowledge
+							</section>
+							<section>
+								<h3>Frameworks/<wbr />Tools/<wbr />Tech:</h3>
+								<ul>
+									<!-- Svelte -->
+									<li style="--tag-border-color: #ff3c00" class="tag">
+										<a
+											id="svelte"
+											class="fascinated"
+											rel="external"
+											hreflang="en"
+											href="https://www.svelte.dev/"
+										>
+											<img
+												src="/svg/frameworks/svelte.svg"
+												alt="Official Logo of the best frontend framework/compiler known as Svelte. It' not even a competition"
+											/>
+										</a>
+									</li>
+									<!-- Fastify -->
+									<li style="--tag-border-color: #000000" class="tag">
+										<a
+											rel="external"
+											href="https://www.fastify.io"
+											hreflang="en"
+										>
+											<img
+												src="/svg/frameworks/fastify.svg"
+												alt="Logo of the fast NodeJS framework Fastify"
+											/>
+										</a>
+									</li>
+									<!-- Vite -->
+									<li
+										style="
+											--tag-border-color: linear-gradient(
+												#64a5ff,
+												#8877fe,
+												#af45fe
+											);
+										"
+										class="tag"
+									>
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.vitejs.dev/"
+										>
+											<img
+												src="/svg/tools/vite.svg"
+												alt="Logo of the frontend tool Vite. This tool is known as a bundler"
+											/>
+										</a>
+									</li>
+
+									<!-- Git -->
+									<li style="--tag-border-color: #f05133" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.git-scm.com/"
+										>
+											<img
+												src="/svg/tools/git.svg"
+												alt="Logo of the 'Version Control Software' Git"
+											/>
+										</a>
+									</li>
+									<!-- PWA -->
+									<li
+										style="
+											--tag-border-color: linear-gradient(
+												135deg,
+												#3d3d3d,
+												#3d3d3d,
+												#5a0fc8,
+												#3d3d3d,
+												#3d3d3d
+											);
+										"
+										class="tag"
+									>
+										<a
+											rel="external"
+											class="fascinated"
+											hreflang="en"
+											href="https://www.web.dev/progressive-web-apps/"
+										>
+											<img
+												src="/svg/tech/pwa.svg"
+												alt="The official Logo of Progressive Web Apps, a powerful web technologie"
+											/>
+										</a>
+									</li>
+									<!-- Linux -->
+									<li style="--tag-border-color: #e95420" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.linuxfoundation.org/"
+										>
+											<img
+												src="/svg/tech/tux.svg"
+												alt="Tux the penguin, the official linux mascot"
+											/>
+										</a>
+									</li>
+
+									<!-- VSCode -->
+									<li style="--tag-border-color: #0078c6" class="tag">
+										<a
+											rel="external"
+											href="https://www.code.visualstudio.com/"
+											hreflang="en"
+										>
+											<img
+												src="/svg/tools/vscode.svg"
+												alt="Logo of the code editor 'Visual Studio Code'"
+											/>
+										</a>
+									</li>
+									<!-- React -->
+									<li style="--tag-border-color: #00d8ff" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.reactjs.org/"
+										>
+											<img
+												src="/svg/frameworks/react.svg"
+												alt="Logo of the frontend web framework React"
+											/>
+										</a>
+									</li>
+									<!-- NextJS -->
+									<li style="--tag-border-color: #000" class="tag">
+										<a
+											rel="external"
+											class="fascinated"
+											hreflang="en"
+											href="https://www.nextjs.org/"
+										>
+											<img
+												src="/svg/frameworks/nextjs-round.svg"
+												alt="Logo of NextJS"
+											/>
+										</a>
+									</li>
+
+									<!-- Firebase -->
+									<li style="--tag-border-color: #fcca3f" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://www.firebase.google.com/"
+										>
+											<img
+												src="/svg/tech/firebase.svg"
+												alt="Logo of the NodeJS framework Express"
+											/>
+										</a>
+									</li>
+									<!-- Jetpack Compose -->
+									<li
+										style="
+											--tag-border-color: linear-gradient(
+												#3ddc85,
+												#173d4d,
+												#4285f4
+											);
+										"
+										class="tag"
+									>
+										<a
+											rel="external"
+											hreflang="en"
+											class="fascinated"
+											href="https://www.developer.android.com/jetpack/compose"
+										>
+											<img
+												src="/svg/frameworks/jetpack-compose.svg"
+												alt="Logo of the new Android Framework Jetpack Compose"
+											/>
+										</a>
+									</li>
+									<!-- Angular -->
+									<li style="--tag-border-color: #c3002f" class="tag">
+										<a
+											rel="external"
+											href="https://www.angular.io"
+											hreflang="en"
+										>
+											<img
+												src="/svg/frameworks/angular.svg"
+												alt="Logo of the JS framework Angular"
+											/>
+										</a>
+									</li>
+
+									<!-- Postgres -->
+									<li style="--tag-border-color: #336791" class="tag">
+										<a
+											rel="external"
+											href="https://www.postgresql.org/"
+											hreflang="en"
+											class="fascinated"
+										>
+											<img
+												src="/svg/tech/postgres.svg"
+												alt="Logo of the popular database Postgresql"
+											/>
+										</a>
+									</li>
+									<!-- PostGIS -->
+									<li style="--tag-border-color: #b5bac2" class="tag">
+										<a
+											rel="external"
+											href="https://www.postgis.net/"
+											hreflang="en"
+										>
+											<img
+												src="/svg/tech/postgis.svg"
+												alt="Logo of the popular Postgresql extension PostGIS used for GIS Applications"
+											/>
+										</a>
+									</li>
+									<!-- PgRouting -->
+									<li style="--tag-border-color: #34659a" class="tag">
+										<a
+											rel="external"
+											href="https://www.pgrouting.org/"
+											hreflang="en"
+										>
+											<img
+												src="/svg/tech/pgRouting.svg"
+												alt="A Postgresql extension that adds routing functionality to PostgGIS"
+											/>
+										</a>
+									</li>
+
+									<!-- Spring -->
+									<li style="--tag-border-color: #68bd45" class="tag">
+										<a
+											rel="external"
+											href="https://www.spring.io/projects/spring-boot"
+											hreflang="en"
+										>
+											<img
+												src="/svg/frameworks/spring.svg"
+												alt="Logo of the Java Framework Spring"
+											/>
+										</a>
+									</li>
+									<!-- WebGPU -->
+									<li
+										style="
+											--tag-border-color: linear-gradient(
+												to right,
+												#005a9c,
+												#0076cc,
+												#0093ff
+											);
+										"
+										class="tag"
+									>
+										<a
+											rel="external"
+											href="https://www.spring.io/projects/spring-boot"
+											hreflang="en"
+											class="fascinated"
+										>
+											<img
+												src="/svg/tech/webgpu.svg"
+												alt="Logo of the WebGPU Standard"
+											/>
+										</a>
+									</li>
+									<!-- gRPC -->
+									<li style="--tag-border-color: #244b5a" class="tag">
+										<a
+											rel="external"
+											hreflang="en"
+											href="https://grpc.io/"
+										>
+											<img
+												src="/svg/frameworks/grpc.svg"
+												alt="Logo of the RPC Framework gRPC"
+											/>
+										</a>
 									</li>
 								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td class="timeframe">03/2020 - 05/2020</td>
-							<td class="work-type">
-								<h3>Drinks and Things</h3>
-								<ul class="work-info">
-									<li>Freelancing</li>
-									<li>
-										<p style="display: inline">
-											An online Shop written using NextJS as the
-											Framework and "Shopify" for the backend. It's
-											open source and the shop is online under
+							</section>
+						</section>
+					</section>
+					<section id="info" class="grid-area">
+						<h2>Personal Info</h2>
+						<address>
+							<div
+								itemscope
+								itemprop="address"
+								itemtype="https://schema.org/PostalAddress"
+							>
+								<span itemprop="addressLocality" class="city">
+									Vienna,
+								</span>
+								<span itemprop="addressCountry" class="country">
+									Austria
+								</span>
+							</div>
+							<div>
+								<!-- <svg version="2.0" width="2em" height="2em" style="fill: black">
+									<use href="#envelope" />
+								</svg> -->
+								Mail me at
+								<a
+									itemprop="email"
+									href="mailto:abou.shehata643@yahoo.de"
+								>
+									abou.shehata643@yahoo.de
+								</a>
+							</div>
+							<div>
+								Explore my projects on
+								<a itemprop="url" href="https://github.com/abdo643-HULK">
+									<img
+										id="github-icon"
+										src="/svg/github-icon.svg"
+										alt="StackOverflow Logo.  Go to my profile"
+									/>
+									Github
+								</a>
+							</div>
+							<!-- <div>
+								See my <em>"very"</em> active
+								<a
+									itemprop="url"
+									href="https://stackoverflow.com/users/13565745/abdo643"
+								>
+									<img
+										id="stackoverflow"
+										src="/svg/stackoverflow.svg"
+										alt="StackOverflow Logo. Go to my profile"
+									/>
+									Stackoverflow
+								</a>
+								Account
+							</div> -->
+							<div>
+								My activity on
+								<a
+									itemprop="url"
+									rel="author"
+									hreflang="en"
+									href="https://twitter.com/shehata643"
+								>
+									<img
+										id="twitter"
+										src="/svg/tech/twitter.svg"
+										alt="Logo of the social media platform Twitter."
+									/>
+									Twitter
+								</a>
+							</div>
+							<!-- <div>
+								Lastly have some fun on
+								<a
+									itemprop="url"
+									href="https://www.instagram.com/abdo643/"
+								>
+									<img
+										id="instagram"
+										src="/svg/instagram.svg"
+										alt="Instagram Logo.  Go to my profile"
+									/>
+									Instagram
+								</a>
+							</div> -->
+							<!-- <div>
+								Lastly my
+								<a
+									itemprop="url"
+									href="https://www.linkedin.com/in/abdelrahaman-shehata-40344a189/"
+								>
+									<img
+										id="linkedin"
+										src="/svg/linkedin.svg"
+										alt="LinkedIn Logo.  Go to my profile"
+									/>
+									LinkedIn
+								</a>
+								Profile
+							</div> -->
+						</address>
+					</section>
+					<!-- <section id="about" class="grid-area"></section> -->
+					<section id="education" class="grid-area">
+						<h2>Education</h2>
+						<ul class="list">
+							<li>
+								<details open>
+									<summary>
+										<h3>
+											University of Applied <wbr /> Sciences Upper
+											Austria,<wbr /> Campus Hagenberg
+										</h3>
+										<time> 10/2020 - Present</time>
+									</summary>
+									<ul class="education-info">
+										<li>
+											Mobile Computing. Currently, in the
+											penultimate (5th) Semester
+										</li>
+										<li>
+											2 of my colleagues and I are students
+											representatives for 4 departments:
 											<a
-												rel="external"
-												href="https://www.drinksandthings.wien/"
+												href="https://oeh.fh-ooe.at/campus/hagenberg"
 											>
-												drinksandthings.wien
+												oeh.fh-ooe.at/campus/hagenberg
 											</a>
-										</p>
-									</li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-				</section>
+										</li>
+									</ul>
+								</details>
+							</li>
+							<li>
+								<details open>
+									<summary>
+										<h3>HTL Moedling</h3>
+										<time> 09/2015 - 06/2020</time>
+									</summary>
+									<ul class="education-info">
+										<li>
+											Studied Electronics and Computer Engineering
+										</li>
+									</ul>
+								</details>
+							</li>
+						</ul>
+						<!-- <table>
+							<thead class="visually-hidden">
+								<tr>
+									<th>Timespan of the Education</th>
+									<th>Type of Education and more</th>
+								</tr>
+							</thead> -->
+						<!-- <tr>
+								<td class="timeframe"></td>
+								<td class="education-type">
+									<details open>
+										<summary>
+											<h3>
+												University of Applied <wbr /> Sciences
+												Upper Austria,<wbr /> Campus Hagenberg
+											</h3>
+										</summary>
+										<ul class="education-info">
+											<li>
+												Studying Mobile Computing (MC). Currently
+												in the 5th Semester (only 1 left, but
+												gonna go for the Master)
+											</li>
+											<li>
+												2 of my colleagues and I are students'
+												representatives for 4 departments:
+												<a
+													href="https://oeh.fh-ooe.at/campus/hagenberg"
+												>
+													oeh.fh-ooe.at/campus/hagenberg
+												</a>
+											</li>
+										</ul>
+									</details>
+								</td>
+							</tr> -->
+						<!-- <tr>
+								<td class="timeframe">
+									<time> 2015 - 2020</time>
+								</td>
+								<td class="education-type">
+									<h3>HTL Moedling</h3>
+									<ul class="education-info">
+										<li>
+											Studied Electronics and Technical Computer
+											Sciences/Informatics
+										</li>
+									</ul>
+								</td>
+							</tr> -->
+						<!-- </table> -->
+					</section>
+					<section id="work" class="grid-area">
+						<h2>Work</h2>
+						<ul class="list">
+							<!-- AST -->
+							<li>
+								<details open>
+									<summary>
+										<h3>Automated Software Testing GmbH</h3>
+										<time> 07/2022 - 08/2022 </time>
+									</summary>
+									<ul class="work-info">
+										<li>Internship</li>
+										<li>
+											<p style="display: inline">
+												Worked on the Frontend of the IDE/Editor
+												Plugin
+												<a
+													style="display: inline-flex"
+													rel="external"
+													href="https://www.devmate.software"
+												>
+													Devmate </a
+												>. We were primarily using Angular and
+												SCSS. Was primarily working on rewriting
+												the app to support the new model.
+											</p>
+										</li>
+									</ul>
+								</details>
+							</li>
+							<!-- Drinks & Things -->
+							<li>
+								<details open>
+									<summary>
+										<h3>Drinks and Things</h3>
+										<time> 03/2020 - 05/2020 </time>
+									</summary>
+									<ul class="work-info">
+										<li>Freelancing</li>
+										<li>
+											<p style="display: inline">
+												An online Shop written using
+												<a
+													href="https://nextjs.org/"
+													hreflang="en"
+													rel="external"
+												>
+													NextJS
+												</a>
+												as the Framework and
+												<a
+													href="https://shopify.dev/api/storefront"
+													hreflang="en"
+													rel="external"
+												>
+													Shopify Storefront
+												</a>
+												for the backend. It's open source and the
+												shop is online under
+												<a
+													rel="external"
+													href="https://www.drinksandthings.wien/"
+												>
+													drinksandthings.wien
+												</a>
+											</p>
+										</li>
+									</ul>
+								</details>
+							</li>
+							<!-- Media Markt -->
+							<li>
+								<details open>
+									<summary>
+										<h3>Media Markt AT, SCS</h3>
+										<time> 09/2018 - 09/2020 </time>
+									</summary>
+									<ul class="work-info">
+										<li>Saturday Job</li>
+										<li>
+											Technical Sales Advisor
+											<!-- Worked as a Technical Sales Advisor in the Mobile
+											Department and simultaneously in the Computer
+											Department because of my salesmanship skills and
+											knowledge -->
+										</li>
+									</ul>
+								</details>
+							</li>
+						</ul>
+						<!-- <table> -->
+						<!-- <thead class="visually-hidden">
+								<tr>
+									<th>Timespan</th>
+									<th>Company, Type of Work and more</th>
+								</tr>
+							</thead> -->
+						<!-- AST -->
+						<!-- <tr>
+								<td class="timeframe">
+									<time> 07/2020 - 08/2020 </time>
+								</td>
+								<td class="work-type">
+									<h3>Automated Software Testing</h3>
+									<ul class="work-info">
+										<li>Internship</li>
+										<li>
+											<p style="display: inline">
+												Worked on the Frontend of the IDE/Editor
+												Plugin
+												<a
+													style="display: inline-flex"
+													rel="external"
+													href="https://www.devmate.software"
+												>
+													Devmate </a
+												>. Devmate creates automated tests from
+												provided input data. It supports Java and
+												C#. We were primarly using Angular and
+												SCSS. We were currently working on
+												rewriting the application to support
+												Generics and C++
+											</p>
+										</li>
+									</ul>
+								</td>
+							</tr> -->
+						<!-- Drinks & Things -->
+						<!-- <tr>
+								<td class="timeframe">03/2020 - 05/2020</td>
+								<td class="work-type">
+									<h3>Drinks and Things</h3>
+									<ul class="work-info">
+										<li>Freelancing</li>
+										<li>
+											<p style="display: inline">
+												An online Shop written using
+												<a
+													href="https://nextjs.org/"
+													hreflang="en"
+													rel="external"
+												>
+													NextJS
+												</a>
+												as the Framework and
+												<a
+													href="https://shopify.dev/api/storefront"
+													hreflang="en"
+													rel="external"
+												>
+													Shopify Storefront
+												</a>
+												for the backend. It's open source and the
+												shop is online under
+												<a
+													rel="external"
+													href="https://www.drinksandthings.wien/"
+												>
+													drinksandthings.wien
+												</a>
+											</p>
+										</li>
+									</ul>
+								</td>
+							</tr> -->
+						<!-- Media Markt -->
+						<!-- <tr>
+								<td class="timeframe">
+									<time> 09/2018 - 09/2020 </time>
+								</td>
+								<td class="work-type">
+									<h3>Media Markt AT, SCS</h3>
+									<ul class="work-info">
+										<li>Saturday Job</li>
+										<li>
+											Worked as a Technical Sales Advisor in the
+											Mobile Department and simultaneously in the
+											Computer Department because of my salesmanship
+											skills and knowledge
+										</li>
+									</ul>
+								</td>
+							</tr> -->
+						<!-- </table> -->
+					</section>
+					<section id="projects" class="grid-area">
+						<h2>Projects</h2>
+						<ul style="margin-block-end: 0.3em">
+							<!-- Bachelor Thesis -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>Bachelor Thesis - 3D Graphics Programming</h3>
+									</summary>
+									<p>
+										Continuation of the
+										<a
+											href="https://github.com/abdo643-HULK/WebGPU-GameEngine"
+										>
+											WebGPU Game-Engine
+										</a>
+										but with the focus on creating a glTF Viewer that
+										supports light, materials and gestures.
+									</p>
+								</details>
+							</li>
+							<!-- Home-Automation-Sem3 -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>
+											<a
+												class="screen-hidden"
+												href="https://github.com/abdo643-HULK/Home-Automation-Sem3"
+											>
+												Home Automation
+											</a>
+											<span class="print-hidden">
+												Home Automation -
+											</span>
+										</h3>
+										<a
+											class="print-hidden"
+											href="https://github.com/abdo643-HULK/Home-Automation-Sem3"
+										>
+											https://github.com/abdo643-HULK/Home-Automation-Sem3
+										</a>
+									</summary>
+									<p>
+										The Project for the 3rd Semester. It uses face and
+										body detection with the help of OpenCV to toggle a
+										TV using Home Assistant.
+									</p>
+								</details>
+							</li>
+							<!-- Raytracing-on-Android-Sem2 -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>
+											<a
+												class="screen-hidden"
+												href="https://github.com/abdo643-HULK/Raytracing-on-Android-Sem2"
+											>
+												Raytracing on Android
+											</a>
+											<span class="print-hidden">
+												Raytracing on Android -
+											</span>
+										</h3>
+										<a
+											class="print-hidden"
+											href="https://github.com/abdo643-HULK/Raytracing-on-Android-Sem2"
+										>
+											https://github.com/abdo643-HULK/Raytracing-on-Android-Sem2
+										</a>
+									</summary>
+									<p>
+										The 2nd Semester Project written in Java and GLSL
+										(for OpenGL) with 2 colleagues.
+									</p>
+								</details>
+							</li>
+							<!-- Minimax -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>
+											<a
+												class="screen-hidden"
+												href="https://github.com/abdo643-HULK/Minimax-Game-Theory"
+											>
+												Minimax Game-Theory
+											</a>
+											<span class="print-hidden">
+												Minimax Game-Theory -
+											</span>
+										</h3>
+										<a
+											class="print-hidden"
+											href="https://github.com/abdo643-HULK/Minimax-Game-Theory"
+										>
+											https://github.com/abdo643-HULK/Minimax-Game-Theory
+										</a>
+									</summary>
+									<p>
+										A project with 2 Friends for a paper we had to
+										write. The implementation is demonstrated with the
+										game 'Connect 4' and is written in Typescript and
+										Svelte.
+									</p>
+								</details>
+							</li>
+							<!-- Geographic-Information-System -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>
+											<a
+												class="screen-hidden"
+												href="https://github.com/abdo643-HULK/Geographic-Information-System"
+											>
+												GIS and NMEA 0183 Applications
+											</a>
+											<span class="print-hidden">
+												GIS and NMEA 0183 Applications -
+											</span>
+										</h3>
+										<a
+											class="print-hidden"
+											href="https://github.com/abdo643-HULK/Geographic-Information-System"
+										>
+											https://github.com/abdo643-HULK/Geographic-Information-System
+										</a>
+									</summary>
+									<p>
+										A GIS Application written in Kotlin using JavaFX
+										and PostgreSQL
+									</p>
+								</details>
+							</li>
+							<!-- Android Pokedex -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>
+											<a
+												class="screen-hidden"
+												href="https://github.com/abdo643-HULK/Android-Pokedex"
+											>
+												Android Pokedex
+											</a>
+											<span class="print-hidden">
+												Android Pokedex -
+											</span>
+										</h3>
+										<a
+											class="print-hidden"
+											href="https://github.com/abdo643-HULK/Android-Pokedex"
+										>
+											https://github.com/abdo643-HULK/Android-Pokedex
+										</a>
+									</summary>
+									<p>
+										A Pokédex written in Kotlin with Jetpack Compose
+										and the GraphQL PokéAPI
+									</p>
+								</details>
+							</li>
+							<!-- Algorithms and Data Structures -->
+							<li class="project-item">
+								<details open>
+									<summary>
+										<h3>
+											<a
+												class="screen-hidden"
+												href="https://github.com/abdo643-HULK/Algorithms-and-Datastructures"
+											>
+												Algorithms and Data Structures
+											</a>
+											<span class="print-hidden">
+												Algorithms and Data Structures -
+											</span>
+										</h3>
+										<a
+											class="print-hidden"
+											href="https://github.com/abdo643-HULK/Algorithms-and-Datastructures"
+										>
+											https://github.com/abdo643-HULK/Algorithms-and-Datastructures
+										</a>
+									</summary>
+									<p>Written in C++ and partially in Rust</p>
+								</details>
+							</li>
+						</ul>
+						And more Projects can be found on
+						<a href="https://github.com/abdo643-HULK"> Github </a>
+					</section>
+				</div>
+				<!-- <div class="page"></div> -->
 			</article>
 		</main>
 		<svg style="display: none" version="2.0">
